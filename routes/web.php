@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,9 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::redirect(uri: '/anasayfa', destination: '/home');
 Route::get('/', function () {
-    return view('welcome');
+    return view('home.index');
 });
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::get('/iletişim', [HomeController::class, 'contact'])->name('contact');
+Route::post('/storemessage', [HomeController::class, 'storemessage'])->name('storemessage');
+Route::post('/storecomment', [HomeController::class, 'storecomment'])->name('storecomment');
 
 Route::middleware([
     'auth:sanctum',

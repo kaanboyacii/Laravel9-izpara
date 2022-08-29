@@ -14,7 +14,7 @@
                         <div class="top-header-content h-100 d-flex align-items-center justify-content-between">
                             <!-- Top Headline -->
                             <div class="top-headline">
-                                <p>Welcome to <span>Cryptos</span></p>
+                                <p>Welcome to <span>İzPara</span></p>
                             </div>
                             <!-- Top Login & Faq & Earn Monery btn -->
                             <div class="login-faq-earn-money">

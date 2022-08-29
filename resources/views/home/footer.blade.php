@@ -9,7 +9,7 @@
                     <div class="col-12 col-sm-6 col-lg-4">
                         <div class="footer-widget mb-100">
                             <div class="widget-title">
-                                <a href="#"><img src="img/core-img/logo2.png" alt=""></a>
+                                <a href="#"><img src="{{asset('assets')}}/img/core-img/logodark2.png" alt=""></a>
                             </div>
                             <p>Morbi vel arcu gravida, iaculis lacus vel, posuere ipsum. Sed faucibus mauris vitae urna consectetur, sit amet maximus nisl sagittis. Ut in iaculis enim, et pulvinar mauris. Etiam tristique magna eget velit consectetur, a tincidunt velit dictum.</p>
                             <div class="footer-social-info">
@@ -104,4 +104,4 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- All Plugins js -->
     <script src="{{asset('assets')}}/js/plugins/plugins.js"></script>
     <!-- Active js -->
-    <script src="js/active.js"></script>
+    <script src="{{asset('assets')}}/js/active.js"></script>

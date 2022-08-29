@@ -14,13 +14,14 @@ use App\Http\Controllers\HomeController;
 */
 
 
-Route::redirect(uri: '/anasayfa', destination: '/home');
+// Route::redirect(uri: '/', destination: '/anasayfa');
 Route::get('/', function () {
     return view('home.index');
 });
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/anasayfa', [HomeController::class, 'index'])->name('home');
 
-Route::get('/iletişim', [HomeController::class, 'contact'])->name('contact');
+Route::get('/hakkimizda', [HomeController::class, 'about'])->name('about');
 Route::post('/storemessage', [HomeController::class, 'storemessage'])->name('storemessage');
 Route::post('/storecomment', [HomeController::class, 'storecomment'])->name('storecomment');
 

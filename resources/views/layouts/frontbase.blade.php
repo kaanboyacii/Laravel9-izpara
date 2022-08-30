@@ -9,7 +9,7 @@
     <!-- Title -->
     <title>@yield("title")</title>
     <!-- Favicon -->
-    <link rel="icon" href="{{asset('assets')}}/img/core-img/favicon.ico">
+    <link rel="icon" href="{{asset('assets')}}/img/core-img/izparafavicon.png">
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="{{asset('assets')}}/style.css">
     

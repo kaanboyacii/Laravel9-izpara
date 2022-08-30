@@ -14,7 +14,7 @@
                 "width": "1110",
                 "height": 450,
                 "symbolsGroups": [{
-                        "name": "Hisse",
+                        "name": "Endeks",
                         "originalName": "Indices",
                         "symbols": [{
                                 "name": "BIST:THYAO"
@@ -32,16 +32,19 @@
                                 "name": "BIST:GARAN"
                             },
                             {
-                                "name": "BIST:HALKB"
+                                "name": "BIST:SISE"
                             },
                             {
-                                "name": "BIST:SISE"
+                                "name": "BIST:HALKB"
                             },
                             {
                                 "name": "BIST:ASELS"
                             },
                             {
                                 "name": "BIST:SASA"
+                            },
+                            {
+                                "name": "BIST:TOASO"
                             },
                             {
                                 "name": "BIST:TOASO"
@@ -59,42 +62,112 @@
                                 "name": "BIST:GUBRF"
                             },
                             {
+                                "name": "BIST:VESTL"
+                            },
+                            {
                                 "name": "BIST:TCELL"
                             },
                             {
-                                "name": "BIST:VESTL"
+                                "name": "BIST:KONTR"
                             },
                             {
-                                "name": "BIST:VESTL"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Vadeli",
-                        "originalName": "Futures",
-                        "symbols": [{
-                                "name": "CME_MINI:ES1!",
-                                "displayName": "S&P 500"
+                                "name": "BIST:AKSEN"
                             },
                             {
-                                "name": "CME:6E1!",
-                                "displayName": "Euro"
+                                "name": "BIST:FROTO"
                             },
                             {
-                                "name": "COMEX:GC1!",
-                                "displayName": "Gold"
+                                "name": "BIST:VESBE"
                             },
                             {
-                                "name": "NYMEX:CL1!",
-                                "displayName": "Crude Oil"
+                                "name": "BIST:AKBNK"
                             },
                             {
-                                "name": "NYMEX:NG1!",
-                                "displayName": "Natural Gas"
+                                "name": "BIST:AKSA"
                             },
                             {
-                                "name": "CBOT:ZC1!",
-                                "displayName": "Corn"
+                                "name": "BIST:ARCLK"
+                            },
+                            {
+                                "name": "BIST:SAHOL"
+                            },
+                            {
+                                "name": "BIST:BAGFS"
+                            },
+                            {
+                                "name": "BIST:KORDS"
+                            },
+                            {
+                                "name": "BIST:TKFEN"
+                            },
+                            {
+                                "name": "BIST:ISCTR"
+                            },
+                            {
+                                "name": "BIST:ESEN"
+                            },
+                            {
+                                "name": "BIST:VAKBN"
+                            },
+                            {
+                                "name": "BIST:BIMAS"
+                            },
+                            {
+                                "name": "BIST:YKBNK"
+                            },
+                            {
+                                "name": "BIST:ASUZU"
+                            },
+                            {
+                                "name": "BIST:GWIND"
+                            },
+                            {
+                                "name": "BIST:KCHOL"
+                            },
+                            {
+                                "name": "BIST:DOHOL"
+                            },
+                            {
+                                "name": "BIST:ALKIM"
+                            },
+                            {
+                                "name": "BIST:KOZAL"
+                            },
+                            {
+                                "name": "BIST:ENJSA"
+                            },
+                            {
+                                "name": "BIST:KARSN"
+                            },
+                            {
+                                "name": "BIST:BERA"
+                            },
+                            {
+                                "name": "BIST:TUKAS"
+                            },
+                            {
+                                "name": "BIST:TMSN"
+                            },
+                            {
+                                "name": "BIST:ALARK"
+                            },
+                            {
+                                "name": "BIST:EKGYO"
+                            },
+                            {
+                                "name": "BIST:AKFGY"
+                            },
+                            {
+                                "name": "BIST:TTRAK"
+                            },
+                            {
+                                "name": "BIST:OYAKC"
+                            },
+                            {
+                                "name": "BIST:HKTM"
+                            },
+                            {
+                                "name": "BIST:QUAGR"
                             }
                         ]
                     },
@@ -138,7 +211,6 @@
     <!-- TradingView Widget END -->
 </div>
 
-
 <section class="cryptos-blog-area section-padding-25">
     <div class="container">
         <div class="row align-items-center">
@@ -173,14 +245,21 @@
                 <div class="blog-area">
                     <!-- Single Blog Area -->
                     <div class="single-blog-area d-flex align-items-start">
-                      <iframe src="https://www.finansgundem.com/indexout.asp?renk1=000000&amp;renk2=ffaf02&amp;arka=FFFF&amp;katid=325" style="border: 1px solid #1A1A1A;" vspace="0" hspace="0" marginwidth="0" marginheight="0" width="650" height="595" frameborder="0"></iframe>
+                        <iframe src="https://www.finansgundem.com/indexout.asp?renk1=000000&amp;renk2=ffaf02&amp;arka=FFFF&amp;katid=325" style="border: 1px solid #1A1A1A;" vspace="0" hspace="0" marginwidth="0" marginheight="0" width="650" height="595" frameborder="0"></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<section class="cryptos-blog-area section-padding-25">
+    <div class="container">
+        <h3>Borsa Verileri</h3>
+        <iframe src="https://api.genelpara.com/iframe/?symbol=borsa&borsa=AEFES,AFYON,AKBNK,AKENR,AKSA,AKSEN,ALARK ,ALGYO,ANELE,ARCLK,ASELS,AYGAZ,BAGFS,BANVT,BERA,BIMAS,BIZIM,BJKAS,BRISA,BRSAN,CCOLA,CEMTS,CRFSA,DEVA,DOAS,DOHOL,ECILC,EGEEN,EKGYO,ENKAI,ERBOS,EREGL,FENER ,FROTO,GARAN,GLYHO,GOLTS,GOODY,GOZDE ,GSDHO,GSRAY,GUBRF,HALKB,HLGYO,HURGZ,ICBCT,IEYHO,IHLAS,IHLGM,IPEKE,ISCTR,ISGYO,KARSN,KARTN,KCHOL,KLGYO,KORDS,KOZAA,KOZAL,KRDMD,MAVI,METRO,MGROS,NETAS,NTHOL,ODAS,OTKAR,PETKM,PGSUS,PRKME,SAHOL,SASA,SISE,SKBNK,SNGYO,TATGD,TAVHL,TCELL,THYAO,TKFEN,TKNSA,TLMAN,TMSN,TOASO,TRCAS,TSKB,TTKOM,TTRAK,TUPRS,ULKER,VAKBN ,VESTL,VKGYO,YATAS,YKBNK,ZOREN&stil=stil-7&renk=beyaz" title="Hisse Senetleri" frameborder="0" width="1110" height="405" style="width:1110px; height:405px;"></iframe>
+    </div>
+</section>
 <!-- ##### Course Area End ##### -->
+
 
 <!-- ##### About Area Start ##### -->
 <section class="cryptos-about-area">

@@ -3,231 +3,177 @@
 @section('title', 'İzPara')
 
 @section('content')
-
-<section class="cryptos-blog-area section-padding-100">
-    <div class="container">
-        <table class="table">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">Sembol</th>
-                    <th scope="col">Son</th>
-                    <th scope="col">Fark %</th>
-                    <th scope="col">Adet</th>
-                    <th scope="col">Hacim</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row"><strong>SNGYO</strong></th>
-                    <td>4.23</td>
-                    <td>3.33</td>
-                    <td>123.125</td>
-                    <td>432.310.582</td>
-                </tr>
-                <tr>
-                    <th scope="row"><strong>KRONT</strong></th>
-                    <td>39.91</td>
-                    <td>3.33</td>
-                    <td>123.125</td>
-                    <td>432.310.582</td>
-                </tr>
-                <tr>
-                    <th scope="row"><strong>TIRE</strong></th>
-                    <td>318.55</td>
-                    <td>3.33</td>
-                    <td>123.125</td>
-                    <td>432.310.582</td>
-                </tr>
-                <tr>
-                    <th scope="row"><strong>DGATE</strong></th>
-                    <td>12.75</td>
-                    <td>3.33</td>
-                    <td>123.125</td>
-                    <td>432.310.582</td>
-                </tr>
-            </tbody>
-        </table>
-
+<div class="container">
+    <iframe src="https://api.genelpara.com/iframe/?symbol=para-birimleri&pb=USD,EUR,GBP,XU100,GA,C,BTC&stil=stil-2&renk=beyaz" title="Döviz ve Altın Fiyatları" frameborder="0" width="1110" height="65" style="width:1110px; height:65px;"></iframe>
+    <!-- <iframe src="https://api.genelpara.com/iframe/?symbol=borsa&borsa=AKBNK,ASELS,EREGL,GARAN,KRDMD,AKBNK,ASELS,EREGL,GARAN,KRDMD,AKBNK,ASELS,EREGL,GARAN,KRDMD,AKBNK,ASELS,EREGL,GARAN,KRDMD,AKBNK,ASELS,EREGL,GARAN,KRDMD,AKBNK,ASELS,EREGL,GARAN,KRDMD,AKBNK,ASELS,EREGL,GARAN,KRDMD,&stil=stil-6&renk=beyaz" title="Hisse Senetleri" frameborder="0" width="1110" height="405" style="width:1110px; height:405px;"></iframe> -->
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+            {
+                "width": "1110",
+                "height": 450,
+                "symbolsGroups": [{
+                        "name": "Hisse",
+                        "originalName": "Indices",
+                        "symbols": [{
+                                "name": "BIST:THYAO"
+                            },
+                            {
+                                "name": "BIST:EREGL"
+                            },
+                            {
+                                "name": "BIST:PETKM"
+                            },
+                            {
+                                "name": "BIST:TUPRS"
+                            },
+                            {
+                                "name": "BIST:GARAN"
+                            },
+                            {
+                                "name": "BIST:HALKB"
+                            },
+                            {
+                                "name": "BIST:SISE"
+                            },
+                            {
+                                "name": "BIST:ASELS"
+                            },
+                            {
+                                "name": "BIST:SASA"
+                            },
+                            {
+                                "name": "BIST:TOASO"
+                            },
+                            {
+                                "name": "BIST:HEKTS"
+                            },
+                            {
+                                "name": "BIST:KRDMD"
+                            },
+                            {
+                                "name": "BIST:TTKOM"
+                            },
+                            {
+                                "name": "BIST:GUBRF"
+                            },
+                            {
+                                "name": "BIST:TCELL"
+                            },
+                            {
+                                "name": "BIST:VESTL"
+                            },
+                            {
+                                "name": "BIST:VESTL"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Vadeli",
+                        "originalName": "Futures",
+                        "symbols": [{
+                                "name": "CME_MINI:ES1!",
+                                "displayName": "S&P 500"
+                            },
+                            {
+                                "name": "CME:6E1!",
+                                "displayName": "Euro"
+                            },
+                            {
+                                "name": "COMEX:GC1!",
+                                "displayName": "Gold"
+                            },
+                            {
+                                "name": "NYMEX:CL1!",
+                                "displayName": "Crude Oil"
+                            },
+                            {
+                                "name": "NYMEX:NG1!",
+                                "displayName": "Natural Gas"
+                            },
+                            {
+                                "name": "CBOT:ZC1!",
+                                "displayName": "Corn"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Döviz",
+                        "originalName": "Forex",
+                        "symbols": [{
+                                "name": "FX:EURUSD",
+                                "displayName": "EUR/USD"
+                            },
+                            {
+                                "name": "FX:GBPUSD",
+                                "displayName": "GBP/USD"
+                            },
+                            {
+                                "name": "FX:USDJPY",
+                                "displayName": "USD/JPY"
+                            },
+                            {
+                                "name": "FX:USDCHF",
+                                "displayName": "USD/CHF"
+                            },
+                            {
+                                "name": "FX:AUDUSD",
+                                "displayName": "AUD/USD"
+                            },
+                            {
+                                "name": "FX:USDCAD",
+                                "displayName": "USD/CAD"
+                            }
+                        ]
+                    }
+                ],
+                "showSymbolLogo": true,
+                "colorTheme": "light",
+                "isTransparent": false,
+                "locale": "tr"
+            }
+        </script>
     </div>
-</section>
+    <!-- TradingView Widget END -->
+</div>
 
-<section class="cryptos-blog-area section-padding-100">
+
+<section class="cryptos-blog-area section-padding-25">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-lg-5">
-                <div class="cryptos-prices-table">
-
-                    <!-- Single Price Table -->
-                    <div class="single-price-table d-flex align-items-center justify-content-between">
-                        <div class="p-content d-flex align-items-center">
-                            <span>01</span>
-                            <img src="{{asset('assets')}}/img/bg-img/bitcoin.png" alt="">
-                            <p>Bitcoin <span>BTC</span></p>
-                        </div>
-                        <div class="price increase">
-                            <p>$12 456.78</p>
-                        </div>
-                    </div>
-
-                    <!-- Single Price Table -->
-                    <div class="single-price-table d-flex align-items-center justify-content-between">
-                        <div class="p-content d-flex align-items-center">
-                            <span>02</span>
-                            <img src="{{asset('assets')}}/img/bg-img/ethereum.png" alt="">
-                            <p>Ethereum <span>ETH</span></p>
-                        </div>
-                        <div class="price increase">
-                            <p>$1051.98</p>
-                        </div>
-                    </div>
-
-                    <!-- Single Price Table -->
-                    <div class="single-price-table d-flex align-items-center justify-content-between">
-                        <div class="p-content d-flex align-items-center">
-                            <span>03</span>
-                            <img src="{{asset('assets')}}/img/bg-img/bitcoin-cash.png" alt="">
-                            <p>Bitcoin Cash <span>BCH</span></p>
-                        </div>
-                        <div class="price decrease">
-                            <p>$2256.78</p>
-                        </div>
-                    </div>
-
-                    <!-- Single Price Table -->
-                    <div class="single-price-table d-flex align-items-center justify-content-between">
-                        <div class="p-content d-flex align-items-center">
-                            <span>04</span>
-                            <img src="{{asset('assets')}}/img/bg-img/ripple.png" alt="">
-                            <p>Ripple <span>XRP</span></p>
-                        </div>
-                        <div class="price increase">
-                            <p>$2.03</p>
-                        </div>
-                    </div>
-
-                    <!-- Single Price Table -->
-                    <div class="single-price-table d-flex align-items-center justify-content-between">
-                        <div class="p-content d-flex align-items-center">
-                            <span>05</span>
-                            <img src="{{asset('assets')}}/img/bg-img/litecoin.png" alt="">
-                            <p>Litecoin <span>LTC</span></p>
-                        </div>
-                        <div class="price increase">
-                            <p>$321.98</p>
-                        </div>
-                    </div>
-
-                    <!-- Single Price Table -->
-                    <div class="single-price-table d-flex align-items-center justify-content-between">
-                        <div class="p-content d-flex align-items-center">
-                            <span>06</span>
-                            <img src="{{asset('assets')}}/img/bg-img/cardano.png" alt="">
-                            <p>Cardano <span>ADA</span></p>
-                        </div>
-                        <div class="price increase">
-                            <p>$0.75</p>
-                        </div>
-                    </div>
-
-                    <!-- Single Price Table -->
-                    <div class="single-price-table d-flex align-items-center justify-content-between">
-                        <div class="p-content d-flex align-items-center">
-                            <span>07</span>
-                            <img src="{{asset('assets')}}/img/bg-img/nem.png" alt="">
-                            <p>NEM <span>XEM</span></p>
-                        </div>
-                        <div class="price increase">
-                            <p>$0.89</p>
-                        </div>
-                    </div>
-
-                    <!-- Single Price Table -->
-                    <div class="single-price-table d-flex align-items-center justify-content-between">
-                        <div class="p-content d-flex align-items-center">
-                            <span>08</span>
-                            <img src="{{asset('assets')}}/img/bg-img/neo.png" alt="">
-                            <p>NEO <span>NEO</span></p>
-                        </div>
-                        <div class="price decrease">
-                            <p>$123.90</p>
-                        </div>
-                    </div>
-
-                    <!-- Single Price Table -->
-                    <div class="single-price-table d-flex align-items-center justify-content-between">
-                        <div class="p-content d-flex align-items-center">
-                            <span>09</span>
-                            <img src="{{asset('assets')}}/img/bg-img/stellar.png" alt="">
-                            <p>Stellar <span>XLM</span></p>
-                        </div>
-                        <div class="price increase">
-                            <p>$0.67</p>
-                        </div>
-                    </div>
-
-                    <!-- Single Price Table -->
-                    <div class="single-price-table d-flex align-items-center justify-content-between">
-                        <div class="p-content d-flex align-items-center">
-                            <span>10</span>
-                            <img src="{{asset('assets')}}/img/bg-img/iota.png" alt="">
-                            <p>IOTA <span>IOT</span></p>
-                        </div>
-                        <div class="price increase">
-                            <p>$3.55</p>
-                        </div>
-                    </div>
-
-                </div>
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
+                    {
+                        "colorTheme": "light",
+                        "dateRange": "12M",
+                        "exchange": "BIST",
+                        "showChart": true,
+                        "locale": "tr",
+                        "largeChartUrl": "",
+                        "isTransparent": false,
+                        "showSymbolLogo": false,
+                        "showFloatingTooltip": false,
+                        "width": "400",
+                        "height": "600",
+                        "plotLineColorGrowing": "rgba(255, 221, 19, 1)",
+                        "plotLineColorFalling": "rgba(255, 0, 0, 1)",
+                        "gridLineColor": "rgba(42, 46, 57, 0)",
+                        "scaleFontColor": "rgba(120, 123, 134, 1)",
+                        "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+                        "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+                        "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+                        "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+                        "symbolActiveColor": "rgba(41, 98, 255, 0.12)"
+                    }
+                </script>
             </div>
             <div class="col-12 col-lg-7">
                 <div class="blog-area">
                     <!-- Single Blog Area -->
                     <div class="single-blog-area d-flex align-items-start">
-                        <!-- Thumbnail -->
-                        <div class="blog-thumbnail">
-                            <img src="{{asset('assets')}}/img/blog-img/1.jpg" alt="">
-                        </div>
-                        <!-- Content -->
-                        <div class="blog-content">
-                            <a href="#" class="post-title">This Platform Aims to Disrupt the Market</a>
-                            <div class="meta-data">
-                                <a href="#">Crypto News</a> |
-                                <a href="#">March 18, 2018</a>
-                            </div>
-                            <p>Morbi vel arcu gravida, iaculis lacus vel, posuere ipsum. Sed faucibus mauris vitae urna consectetur, sit amet maximus nisl sagittis.</p>
-                        </div>
-                    </div>
-                    <!-- Single Blog Area -->
-                    <div class="single-blog-area d-flex align-items-start">
-                        <!-- Thumbnail -->
-                        <div class="blog-thumbnail">
-                            <img src="{{asset('assets')}}/img/blog-img/2.jpg" alt="">
-                        </div>
-                        <!-- Content -->
-                        <div class="blog-content">
-                            <a href="#" class="post-title">New Hedge Funds invests in Crypto</a>
-                            <div class="meta-data">
-                                <a href="#">Crypto News</a> |
-                                <a href="#">March 18, 2018</a>
-                            </div>
-                            <p>Iaculis lacus vel, posuere ipsum. Sed faucibus mauris vitae urna consectetur, sit amet maximus nisl sagittis. Ut in iaculis enim.</p>
-                        </div>
-                    </div>
-                    <!-- Single Blog Area -->
-                    <div class="single-blog-area d-flex align-items-start">
-                        <!-- Thumbnail -->
-                        <div class="blog-thumbnail">
-                            <img src="{{asset('assets')}}/img/blog-img/3.jpg" alt="">
-                        </div>
-                        <!-- Content -->
-                        <div class="blog-content">
-                            <a href="#" class="post-title">This Platform Aims to Disrupt the Market</a>
-                            <div class="meta-data">
-                                <a href="#">Crypto News</a> |
-                                <a href="#">March 18, 2018</a>
-                            </div>
-                            <p>Morbi vel arcu gravida, iaculis lacus vel, posuere ipsum. Sed faucibus mauris vitae urna consectetur, sit amet maximus nisl sagittis.</p>
-                        </div>
+                      <iframe src="https://www.finansgundem.com/indexout.asp?renk1=000000&amp;renk2=ffaf02&amp;arka=FFFF&amp;katid=325" style="border: 1px solid #1A1A1A;" vspace="0" hspace="0" marginwidth="0" marginheight="0" width="650" height="595" frameborder="0"></iframe>
                     </div>
                 </div>
             </div>

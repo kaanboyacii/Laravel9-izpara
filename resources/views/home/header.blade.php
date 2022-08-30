@@ -14,13 +14,13 @@
                         <div class="top-header-content h-100 d-flex align-items-center justify-content-between">
                             <!-- Top Headline -->
                             <div class="top-headline">
-                                <p>Welcome to <span>İzPara</span></p>
+                                <p><span>İzPara'ya</span> Hoşgeldiniz</p>
                             </div>
                             <!-- Top Login & Faq & Earn Monery btn -->
                             <div class="login-faq-earn-money">
-                                <a href="#">Login | Register</a>
-                                <a href="#">FAQ</a>
-                                <a href="#" class="active">Earn Money</a>
+                                <a href="#">Giriş yap | Kayıt Ol</a>
+                                <a href="#">SSS</a>
+                                <a href="#" class="active">Para kazan</a>
                             </div>
                         </div>
                     </div>
@@ -36,7 +36,7 @@
                     <nav class="classy-navbar justify-content-between" id="cryptosNav">
 
                         <!-- Logo -->
-                        <a class="nav-brand" href="index.html"><img src="{{asset('assets')}}/img/core-img/logo.png" alt=""></a>
+                        <a class="nav-brand" href="/anasayfa"><img src="{{asset('assets')}}/img/core-img/logo.png" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -54,33 +54,31 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="#">Pages</a>
-                                        <ul class="dropdown">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="about-us.html">About Us</a></li>
-                                            <li><a href="blog.html">Articles</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="elements.html">Elements</a></li>
-                                            <li><a href="#">Dropdown</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="index.html">Home</a></li>
-                                                    <li><a href="about-us.html">About Us</a></li>
-                                                    <li><a href="blog.html">Articles</a></li>
-                                                    <li><a href="contact.html">Contact</a></li>
-                                                    <li><a href="elements.html">Elements</a></li>
-                                                    <li><a href="#">Dropdown</a>
-                                                        <ul class="dropdown">
-                                                            <li><a href="index.html">Home</a></li>
-                                                            <li><a href="about-us.html">About Us</a></li>
-                                                            <li><a href="blog.html">Articles</a></li>
-                                                            <li><a href="contact.html">Contact</a></li>
-                                                            <li><a href="elements.html">Elements</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
+                                    <li><a href="/anasayfa">Anasayfa</a></li>
+                                    <li><a href="/hakkimizda">Hakkımızda</a></li>
+                                    <li><a href="blog.html">Forum</a></li>
+                                    <li><a href="/iletisim">İletişim</a></li>
+                                    <li><a href="contact.html">Haberler</a>
+                                        <div class="megamenu">
+                                            <div class="single-mega cn-col-4">
+                                                <div class="megamenu-slides owl-carousel">
+                                                    <img src="{{asset('assets')}}/img/bg-img/bg-1.jpg" alt="">
+                                                    <img src="{{asset('assets')}}/img/bg-img/bg-1.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="single-mega cn-col-4">
+                                                <div class="megamenu-slides owl-carousel">
+                                                    <img src="{{asset('assets')}}/img/bg-img/bg-1.jpg" alt="">
+                                                    <img src="{{asset('assets')}}/img/bg-img/bg-1.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="single-mega cn-col-4">
+                                                <div class="megamenu-slides owl-carousel">
+                                                    <img src="{{asset('assets')}}/img/bg-img/bg-1.jpg" alt="">
+                                                    <img src="{{asset('assets')}}/img/bg-img/bg-1.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </li>
                                     <li><a href="#">Mega Menu</a>
                                         <div class="megamenu">
@@ -100,34 +98,15 @@
                                                 <li><a href="#">- Newsletter &amp; Exchange</a></li>
                                                 <li><a href="#">- Terms &amp; Conditions</a></li>
                                             </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="#">- About us</a></li>
-                                                <li><a href="#">- Testimonials</a></li>
-                                                <li><a href="#">- Contact</a></li>
-                                                <li><a href="#">- Terms &amp; Conditions</a></li>
-                                                <li><a href="#">- Newsletter &amp; Exchange</a></li>
-                                                <li><a href="#">- Contact</a></li>
-                                            </ul>
                                             <div class="single-mega cn-col-4">
                                                 <div class="megamenu-slides owl-carousel">
-                                                    <img src="img/bg-img/bg-1.jpg" alt="">
-                                                    <img src="img/bg-img/bg-1.jpg" alt="">
+                                                    <img src="{{asset('assets')}}/img/bg-img/bg-1.jpg" alt="">
+                                                    <img src="{{asset('assets')}}/img/bg-img/bg-1.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
                                     </li>
-                                    <li><a href="#">Currencies</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
                                 </ul>
-
-                                <!-- Newsletter Form -->
-                                <div class="header-newsletter-form">
-                                    <form action="#" method="post">
-                                        <input type="email" name="email" id="email" placeholder="Newsletter">
-                                        <button type="submit">Subscribe</button>
-                                    </form>
-                                </div>
-
                             </div>
                             <!-- Nav End -->
                         </div>

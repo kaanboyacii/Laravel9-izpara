@@ -5,7 +5,6 @@
     <meta name="description" content="@yield("description")">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords" content="@yield("keywords")">
-    <meta name="viewport" content="@yield("title")">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <!-- Title -->
     <title>@yield("title")</title>
@@ -13,6 +12,7 @@
     <link rel="icon" href="{{asset('assets')}}/img/core-img/favicon.ico">
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="{{asset('assets')}}/style.css">
+    
     @yield("head")
 </head>
 

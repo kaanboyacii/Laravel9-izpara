@@ -22,7 +22,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/anasayfa', [HomeController::class, 'index'])->name('home');
 
 Route::get('/hakkimizda', [HomeController::class, 'about'])->name('about');
-Route::post('/storemessage', [HomeController::class, 'storemessage'])->name('storemessage');
+Route::get('/iletisim', [HomeController::class, 'contact'])->name('contact');
 Route::post('/storecomment', [HomeController::class, 'storecomment'])->name('storecomment');
 
 Route::middleware([

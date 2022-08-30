@@ -21,4 +21,8 @@ class HomeController extends Controller
     {
         return view(view: 'home.contact');
     }
+    public function blog()
+    {
+        return view(view: 'home.blog');
+    }
 }

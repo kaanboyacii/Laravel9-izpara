@@ -56,7 +56,7 @@
                                 <ul>
                                     <li><a href="/anasayfa">Anasayfa</a></li>
                                     <li><a href="/hakkimizda">Hakkımızda</a></li>
-                                    <li><a href="blog.html">Forum</a></li>
+                                    <li><a href="/forum">Forum</a></li>
                                     <li><a href="/iletisim">İletişim</a></li>
                                     <li><a href="contact.html">Haberler</a>
                                         <div class="megamenu">

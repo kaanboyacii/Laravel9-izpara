@@ -18,8 +18,16 @@
                             </div>
                             <!-- Top Login & Faq & Earn Monery btn -->
                             <div class="login-faq-earn-money">
-                                <a href="#">Giriş yap | Kayıt Ol</a>
-                                <a href="#">SSS</a>
+                                @guest
+                                <a href="/loginuser">Giriş Yap</a>
+                                <a href="/registeruser">Üye Ol</a>
+                                @endguest
+                                @auth
+                                <a href="{{route('userpanel.index')}}"><i class="fa fa-user"></i> {{Auth::user()->name}}</a>
+                                @endauth
+                                @auth
+                                <a href="/logoutuser">Çıkış Yap</a>
+                                @endauth
                                 <a href="#" class="active">Para kazan</a>
                             </div>
                         </div>

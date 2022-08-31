@@ -27,27 +27,15 @@
                             <div class="widget-title">
                                 <h6>Son Gönderiler</h6>
                             </div>
+                            @foreach($lastestblogpost as $rs)
                             <!-- Single Blog Post -->
                             <div class="single--blog-post">
                                 <a href="#">
-                                    <p>Aliquam ac eleifend metus</p>
+                                    <p>{{$rs->title}}</p>
                                 </a>
-                                <span>March 10, 2018</span>
+                                <span>{{$rs->created_at->format('m/d/Y')}}</span>
                             </div>
-                            <!-- Single Blog Post -->
-                            <div class="single--blog-post">
-                                <a href="#">
-                                    <p>Donec in libero sit amet mi vulputate</p>
-                                </a>
-                                <span>March 10, 2018</span>
-                            </div>
-                            <!-- Single Blog Post -->
-                            <div class="single--blog-post">
-                                <a href="#">
-                                    <p>Aliquam ac eleifend metus</p>
-                                </a>
-                                <span>March 10, 2018</span>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
 

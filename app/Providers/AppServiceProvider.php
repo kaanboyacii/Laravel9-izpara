@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\BlogPost;
 use App\Models\Message;
 use App\Models\Setting;
 use Illuminate\Support\ServiceProvider;
@@ -32,6 +33,8 @@ class AppServiceProvider extends ServiceProvider
             $view->with('setting',  $setting);
             $newmessages = Message::where('status', 'Yeni')->get();
             $view->with('newmessages',  $newmessages);
+            $lastestblogpost = BlogPost::where('status', '=', "onaylanmış")->limit(3)->latest()->get();
+            $view->with('lastestblogpost',  $lastestblogpost);
         });
     }
 }

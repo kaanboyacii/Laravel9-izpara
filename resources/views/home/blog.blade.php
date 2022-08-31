@@ -35,7 +35,7 @@
 <!-- ##### Breadcumb Area End ##### -->
 
 <!-- ##### Blog Area Start ##### -->
-<div class="blog-area section-padding-100">
+<section class="cryptos-blog-area section-padding-100">
     <div class="container">
         @include('home.messages')
         <a href="{{ route('createblogpost')}}" style="margin-bottom: 40px;" class="btn cryptos-btn btn-lg btn-block">Yeni Konu Ekle</a>
@@ -114,8 +114,5 @@
                 </div>
             </div>
         </div>
-    </div>
-    <br>
-    <br>
-
-    @endsection('content')
+</section>
+@endsection('content')

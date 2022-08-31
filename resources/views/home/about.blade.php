@@ -53,7 +53,7 @@
     </section>
     <!-- ##### About Area End ##### -->
 
-    <div class="cryptos-guide-line section-padding-100 bg-img bg-overlay" style="background-image: url({{asset('assets')}}/img/bg-img/bg-3.jpg);">
+    <div class="cryptos-guide-line section-padding-100 bg-img bg-overlay" style="background-image: url(img/bg-img/bg-3.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6">

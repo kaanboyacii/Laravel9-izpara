@@ -8,10 +8,10 @@
     Version: 1.0
 
 ----------------------------------------------
-    
+
     CSS INDEX
     ===================
-  
+
     1. Core Css
     2. Dashboard One
         2.1 Sidebar Menu
@@ -157,7 +157,7 @@
 .metismenu li a {
     position: relative;
     display: block;
-    color: #8d97ad;
+    color: #ffaf02;
     font-size: 15px;
     text-transform: capitalize;
     padding: 15px 15px;
@@ -166,7 +166,7 @@
 }
 
 .metismenu li a i {
-    color: #6a56a5;
+    color: #ffaf02;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
@@ -267,7 +267,7 @@
 }
 
 .mainheader-area .logo a span {
-    color: #843df9;
+    color: #ffaf02;
 }
 
 .horizontal-menu {
@@ -289,7 +289,7 @@
 
 .horizontal-menu ul li:hover>a,
 .horizontal-menu ul li.active>a {
-    color: #007BFF;
+    color: #ffaf02;
 }
 
 .horizontal-menu nav>ul>li:first-child>a {
@@ -309,7 +309,7 @@
     background: #fff;
     opacity: 0;
     visibility: hidden;
-    border-top: 4px solid #007BFF;
+    border-top: 4px solid #ffaf02;
     border-radius: 3px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.03);
 }
@@ -345,7 +345,7 @@
 /* mobile menu */
 
 .slicknav_menu {
-    background: #8255f7;
+    background: #ffaf02;
     padding: 0;
     margin-top: 20px;
 }
@@ -378,7 +378,7 @@
 
 .slicknav_nav .slicknav_row:hover {
     border-radius: 0;
-    background: #8e66f7;
+    background: #ffaf02;
 }
 
 .slicknav_nav li i {
@@ -495,7 +495,7 @@
 }
 
 .notification-area li.settings-btn.active i {
-    color: #007BFF;
+    color: #ffaf02;
 }
 
 .notification-area li>i {
@@ -687,7 +687,7 @@ ul.breadcrumbs {
     display: block;
     font-size: 14px;
     font-weight: 400;
-    color: #7801ff;
+    color: #ffaf02;
     letter-spacing: 0;
     margin-right: 16px;
     position: relative;
@@ -717,8 +717,8 @@ ul.breadcrumbs {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background: -webkit-linear-gradient(left, #8914fe 0%, #8063f5 100%);
-    background: linear-gradient(to right, #8914fe 0%, #8063f5 100%);
+    background: -webkit-linear-gradient(left, #ffaf02 0%, #ffaf02 100%);
+    background: linear-gradient(to right, #ffaf02 0%, #ffaf02 100%);
     padding: 17px 38px;
     position: relative;
 }
@@ -799,7 +799,7 @@ ul.breadcrumbs {
 
 .user-profile .dropdown-menu a:hover {
     background: #f8f9fa;
-    color: #2942fa;
+    color: #ffaf02;
 }
 
 /*-------------------- END Page Title Area -------------------*/
@@ -1062,7 +1062,7 @@ table.dbkit-table tr td {
 
 .trd-history-tabs ul li a:hover,
 .trd-history-tabs ul li a.active {
-    border-bottom: 2px solid #731ffd;
+    border-bottom: 2px solid #ffaf02;
     padding-bottom: 7px;
     color: #565656;
 }
@@ -1111,7 +1111,7 @@ table.dbkit-table tr td {
 }
 
 .lts-content h2 a:hover {
-    color: #6d65dc;
+    color: #ffaf02;
 }
 
 .lts-content p {
@@ -1178,7 +1178,7 @@ table.dbkit-table tr td {
 }
 
 .exchange-btn button:hover {
-    background: #3c34ab;
+    background: #ffaf02;
 }
 
 .footer-area {
@@ -1236,7 +1236,7 @@ table.dbkit-table tr td {
 }
 
 .pagination_area ul li a:hover {
-    background: #8553fa;
+    background: #ffaf02;
     color: #fff;
 }
 
@@ -1699,8 +1699,8 @@ table.dbkit-table tr td {
 }
 
 .gradiant-bg .card-header a {
-    background-image: -webkit-linear-gradient(top left, #8914fe, #8160f6);
-    background-image: linear-gradient(to bottom right, #8914fe, #8160f6);
+    background-image: -webkit-linear-gradient(top left, #ffaf02, #ffaf02);
+    background-image: linear-gradient(to bottom right, #ffaf02, #ffaf02);
     color: #fff;
 }
 
@@ -1999,7 +1999,7 @@ label {
 }
 
 .fw-icons a:hover {
-    color: #007BFF;
+    color: #ffaf02;
 }
 
 .fw-icons a i {
@@ -2055,7 +2055,7 @@ label {
 }
 
 .icon-container:hover span {
-    color: #007BFF;
+    color: #ffaf02;
 }
 
 /*-------------------- END Icons ------------------- */
@@ -2107,7 +2107,7 @@ div.dataTables_wrapper div.dataTables_length select {
 /* datatable-primary */
 
 .datatable-primary thead {
-    background: #4336fb;
+    background: #ffaf02;
     color: #fff;
 }
 
@@ -2133,20 +2133,20 @@ table.dataTable thead td {
 
 .datatable-primary .dataTables_paginate .page-item.active .page-link,
 .datatable-primary .dataTables_paginate .page-item .page-link:hover {
-    background-color: #4336fb;
-    border-color: #4336fb;
+    background-color: #ffaf02;
+    border-color: #ffaf02;
     color: #fff;
 }
 
 .datatable-primary .dataTables_paginate .page-link {
-    color: #4336fb;
-    border: 1px solid #4336fb;
+    color: #ffaf02;
+    border: 1px solid #ffaf02;
 }
 
 .datatable-primary .dataTables_paginate .paginate_button.disabled,
 .datatable-primary .dataTables_paginate .paginate_button.disabled:hover,
 .datatable-primary .dataTables_paginate .paginate_button.disabled:active {
-    color: #4336fb!important;
+    color: #ffaf02!important;
     border: none;
 }
 
@@ -2418,7 +2418,7 @@ table.dataTable thead td {
 }
 
 .submit-btn-area button:hover {
-    background: #2c71da;
+    background: #ffaf02;
     color: #ffffff;
 }
 
@@ -2451,7 +2451,7 @@ table.dataTable thead td {
 }
 
 .login-other a.fb-login {
-    background: #8655FC;
+    background: #ffaf02;
     color: #fff;
 }
 
@@ -2555,7 +2555,7 @@ table.dataTable thead td {
 }
 
 .prc-head h4 {
-    background: #805ff5;
+    background: #ffaf02;
     color: #fff;
     padding: 28px;
     letter-spacing: 0;
@@ -2583,7 +2583,7 @@ table.dataTable thead td {
 .prc-list>a {
     display: inline-block;
     margin-top: 40px;
-    background: #805ff5;
+    background: #ffaf02;
     color: #fff;
     padding: 11px 20px;
     border-radius: 40px;
@@ -2627,9 +2627,9 @@ table.dataTable thead td {
 .error-content h2 {
     font-size: 98px;
     font-weight: 800;
-    color: #686cdc;
+    color: #ffaf02;
     margin-bottom: 28px;
-    text-shadow: -3px -3px 0 #ffffff, 3px -3px 0 #ffffff, -3px 3px 0 #ffffff, 3px 3px 0 #ffffff, 4px 4px 0 #6569dc, 5px 5px 0 #6569dc, 6px 6px 0 #6569dc, 7px 7px 0 #6569dc;
+    text-shadow: -3px -3px 0 #ffffff, 3px -3px 0 #ffffff, -3px 3px 0 #ffffff, 3px 3px 0 #ffffff, 4px 4px 0 #6569dc, 5px 5px 0 #6569dc, 6px 6px 0 #ffaf02, 7px 7px 0 #ffaf02;
     font-family: 'lato', sans-serif;
 }
 
@@ -2639,14 +2639,14 @@ table.dataTable thead td {
 
 .error-content p {
     font-size: 17px;
-    color: #787bd8;
+    color: #ffaf02;
     font-weight: 600;
 }
 
 .error-content a {
     display: inline-block;
     margin-top: 40px;
-    background: #656aea;
+    background: #ffaf02;
     color: #fff;
     padding: 16px 26px;
     border-radius: 3px;
@@ -2835,3 +2835,48 @@ table.dataTable thead td {
 }
 
 /*-------------------- END Offset Sidebar ------------------- */
+.shoping__checkout {
+    background: #f5f5f5;
+    padding: 30px;
+    padding-top: 20px;
+    margin-top: 50px;
+}
+
+.shoping__checkout h5 {
+    color: #1c1c1c;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+
+.shoping__checkout ul {
+    margin-bottom: 28px;
+}
+
+.shoping__checkout ul li {
+    font-size: 16px;
+    color: #1c1c1c;
+    font-weight: 700;
+    list-style: none;
+    overflow: hidden;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 13px;
+    margin-bottom: 18px;
+}
+
+.shoping__checkout ul li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.shoping__checkout ul li span {
+    font-size: 18px;
+    color: #dd2222;
+    float: right;
+}
+
+.shoping__checkout .primary-btn {
+    display: block;
+    text-align: center;
+}

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\HomeController as AdminHomeController;
+use App\Http\Controllers\Admin\MessageController as AdminMessageController;
 
 
 /*
@@ -34,6 +35,13 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
     //Setting
     Route::get('/setting', [AdminHomeController::class, 'setting'])->name('setting');
     Route::post('/setting', [AdminHomeController::class, 'settingupdate'])->name('settingupdate');
+    //ADMIN MESSAGE ROUTES
+    Route::prefix('/messages')->name('message.')->controller(AdminMessageController::class)->group(function () {
+        Route::get('/', [AdminMessageController::class, 'index'])->name('index');
+        Route::get('/show/{id}', 'show')->name('show');
+        Route::post('/update/{id}', 'update')->name('update');
+        Route::get('/destroy/{id}', 'destroy')->name('destroy');
+    });
 }); //admin panel routes
 
 Route::middleware([

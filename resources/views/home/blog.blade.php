@@ -55,7 +55,7 @@
                             <div class="single-blog-area d-flex align-items-start">
                                 <!-- Thumbnail -->
                                 <div class="blog-thumbnail">
-                                    <img src="{{Storage::url($rs->image)}}"alt="">
+                                    <img src="{{Storage::url($rs->image)}}" alt="">
                                 </div>
                                 <!-- Content -->
                                 <div class="blog-content">
@@ -63,7 +63,7 @@
                                     <div class="meta-data">
                                         <a href="#">{{$rs->subject}}</a> |
                                         <a href="#"> {{$rs->created_at->format('m/d/Y')}}</a>
-                                        
+
                                     </div>
                                     <p>{{$rs->content}}</p>
                                 </div>
@@ -82,88 +82,35 @@
                     <div class="blog-section-heading mb-50">
                         <h3>Son Haberler</h3>
                     </div>
-
-                    <div class="single-blog-area blog-style-2 mb-50">
-                        <!-- Thumbnail -->
-                        <div class="blog-thumbnail">
-                            <img src="{{asset('assets')}}/img/blog-img/blog3.jpg" alt="">
-                        </div>
-                        <!-- Content -->
-                        <div class="blog-content">
-                            <a href="#" class="post-title">This Platform Aims to Disrupt the Market</a>
-                            <div class="meta-data">
-                                <a href="#">Crypto News</a> |
-                                <a href="#">March 18, 2018</a>
-                            </div>
-                            <p>Morbi vel arcu gravida, iaculis lacus vel, posuere ipsum. Sed faucibus mauris vitae urna consectetur, sit amet maximus nisl sagittis.</p>
+                    <!-- BAŞLA: TRT Haber Sitene Ekle -->
+                    <div style="font: normal 11px Arial; width: 338px; border: solid 1px #ccc; background: #fff; border-radius: 3px; box-shadow: 1px 1px 3px #ccc;">
+                        <iframe src="https://www.trthaber.com/sitene-ekle/ekonomi-7/?haberSay=10&renk=a&baslik=1&resimler=1" width="338" height="412" frameborder="0"></iframe>
+                        <div style="text-align: center;line-height: 23px;border-top: solid 1px #ccc; color: #666; margin-top: 5px;box-shadow: 0 -1px 3px #ccc;">
+                            <a style="text-decoration: none;color: #666; font: normal 11px Arial;" href="https://www.trthaber.com/">Son Dakika Haberleri</a> &nbsp;|&nbsp; <a style="text-decoration: none;color: #666; font: normal 11px Arial;" href="https://www.trthaber.com/haber/ekonomi/">Ekonomi Haberleri</a>
                         </div>
                     </div>
-
-                    <div class="single-blog-area blog-style-2 mb-100">
-                        <!-- Thumbnail -->
-                        <div class="blog-thumbnail">
-                            <img src="{{asset('assets')}}/img/blog-img/blog4.jpg" alt="">
-                        </div>
-                        <!-- Content -->
-                        <div class="blog-content">
-                            <a href="#" class="post-title">This Platform Aims to Disrupt the Market</a>
-                            <div class="meta-data">
-                                <a href="#">Crypto News</a> |
-                                <a href="#">March 18, 2018</a>
-                            </div>
-                            <p>Morbi vel arcu gravida, iaculis lacus vel, posuere ipsum. Sed faucibus mauris vitae urna consectetur, sit amet maximus nisl sagittis.</p>
-                        </div>
-                    </div>
-
+                    <!-- BİTİŞ: TRT Haber Sitene Ekle -->
+                    <br><br>
                     <!-- Section Heading -->
                     <div class="blog-section-heading mb-50">
-                        <h3>Trending Posts</h3>
+                        <h3>Trend Gönderiler</h3>
                     </div>
-
+                    @foreach($trendblogpost as $rs)
                     <!-- Single Blog Area -->
                     <div class="single-blog-area blog-style-3 d-flex align-items-center mb-15">
                         <!-- Thumbnail -->
                         <div class="blog-thumbnail">
-                            <img src="{{asset('assets')}}/img/blog-img/5.jpg" alt="">
+                            <img src="{{Storage::url($rs->image)}}" alt="">
                         </div>
                         <!-- Content -->
                         <div class="blog-content">
-                            <a href="#" class="post-title">FunFacts about Bitcoin</a>
+                            <a href="#" class="post-title">{{$rs->title}}</a>
                             <div class="meta-data">
-                                <a href="#">March 18, 2018</a>
+                                <a href="#">{{$rs->created_at->format('m/d/Y')}}</a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Single Blog Area -->
-                    <div class="single-blog-area blog-style-3 d-flex align-items-center mb-15">
-                        <!-- Thumbnail -->
-                        <div class="blog-thumbnail">
-                            <img src="{{asset('assets')}}/img/blog-img/6.jpg" alt="">
-                        </div>
-                        <!-- Content -->
-                        <div class="blog-content">
-                            <a href="#" class="post-title">BLockchain tips</a>
-                            <div class="meta-data">
-                                <a href="#">March 18, 2018</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Single Blog Area -->
-                    <div class="single-blog-area blog-style-3 d-flex align-items-center mb-15">
-                        <!-- Thumbnail -->
-                        <div class="blog-thumbnail">
-                            <img src="{{asset('assets')}}/img/blog-img/7.jpg" alt="">
-                        </div>
-                        <!-- Content -->
-                        <div class="blog-content">
-                            <a href="#" class="post-title">March Price Analisys</a>
-                            <div class="meta-data">
-                                <a href="#">March 18, 2018</a>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>

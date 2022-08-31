@@ -63,8 +63,10 @@ class HomeController extends Controller
     public function blog()
     {
         $lastestblogpost = BlogPost::where('status', '=', "onaylanmış")->latest()->get();
+        $trendblogpost = BlogPost::where('status', '=', "onaylanmış")->inRandomOrder()->limit(3)->get();
         return view('home.blog', [
-            'lastestblogpost' => $lastestblogpost
+            'lastestblogpost' => $lastestblogpost,
+            'trendblogpost' => $trendblogpost
         ]);
     }
     public function createblogpost()

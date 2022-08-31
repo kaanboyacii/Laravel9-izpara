@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\Message;
 use App\Models\Setting;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
@@ -29,6 +30,8 @@ class AppServiceProvider extends ServiceProvider
         View::composer('*', function ($view) {
             $setting = Setting::first();
             $view->with('setting',  $setting);
+            $newmessages = Message::where('status', 'Yeni')->get();
+            $view->with('newmessages',  $newmessages);
         });
     }
 }

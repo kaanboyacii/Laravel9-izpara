@@ -30,6 +30,9 @@ Route::get('/iletisim', [HomeController::class, 'contact'])->name('contact');
 
 Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
     Route::get('/', [AdminHomeController::class, 'index'])->name('index');
+    //Setting
+    Route::get('/setting', [AdminHomeController::class, 'setting'])->name('setting');
+    Route::post('/setting', [AdminHomeController::class, 'settingupdate'])->name('settingupdate');
 }); //admin panel routes
 
 Route::middleware([

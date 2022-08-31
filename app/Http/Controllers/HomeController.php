@@ -6,16 +6,24 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
+use App\Models\Setting;
 
 class HomeController extends Controller
 {
+    // public function index()
+    // {
+    //     return view(view: 'home.index');
+    // }
     public function index()
     {
         return view(view: 'home.index');
     }
     public function about()
     {
-        return view(view: 'home.about');
+        $setting = Setting::first();
+        return view('home.about', [
+            'setting' => $setting
+        ]);
     }
     public function contact()
     {

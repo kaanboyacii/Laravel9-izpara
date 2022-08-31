@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
+use App\Models\Message;
 use App\Models\Setting;
 
 class HomeController extends Controller
@@ -28,6 +29,18 @@ class HomeController extends Controller
     public function contact()
     {
         return view(view: 'home.contact');
+    }
+    public function storemessage(Request $request)
+    {
+        $data = new Message();
+        $data->name = $request->input('name');
+        $data->email = $request->input('email');
+        $data->phone = $request->input('phone');
+        $data->subject = $request->input('subject');
+        $data->message = $request->input('message');
+        $data->ip = request()->ip();
+        $data->save();
+        return redirect()->route('contact')->with('success', 'Mesajınız Gönderildi, Teşekkür Ederiz');
     }
     public function blog()
     {

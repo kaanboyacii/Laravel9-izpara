@@ -27,6 +27,7 @@ Route::get('/anasayfa', [HomeController::class, 'index'])->name('home');
 Route::get('/hakkimizda', [HomeController::class, 'about'])->name('about');
 Route::get('/forum', [HomeController::class, 'blog'])->name('blog');
 Route::get('/iletisim', [HomeController::class, 'contact'])->name('contact');
+Route::post('/storemessage', [HomeController::class, 'storemessage'])->name('storemessage');
 
 Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
     Route::get('/', [AdminHomeController::class, 'index'])->name('index');

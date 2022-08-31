@@ -261,31 +261,6 @@
 </section>
 <!-- ##### Course Area End ##### -->
 
-
-<!-- ##### About Area Start ##### -->
-<section class="cryptos-about-area">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-12 col-md-6">
-                <div class="about-thumbnail mb-100">
-                    <img src="{{asset('assets')}}/img/bg-img/about.png" alt="">
-                </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="about-content mb-100">
-                    <div class="section-heading">
-                        <h3>Let’s change <br><span>the world</span> together</h3>
-                        <h5>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in euismod erat. Ut at erat et arcu pulvinar cursus a eget nisl.</h5>
-                        <p>Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi. Donec et sollicitudin est, in euismod erat. Ut at erat et arcu pulvinar cursus a eget nisl. Cras vitae turpis lacinia, lacinia lacus non, fermentum nisi.</p>
-                        <a href="#" class="btn cryptos-btn mt-30">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- ##### About Area End ##### -->
-
 <!-- ##### Currency Area Start ##### -->
 <section class="currency-calculator-area section-padding-100 bg-img bg-overlay" style="background-image: url({{asset('assets')}}/img/bg-img/bg-2.jpg);">
     <div class="container">

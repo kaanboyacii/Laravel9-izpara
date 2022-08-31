@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
+use App\Models\BlogPost;
 use App\Models\Setting;
 
 class HomeController extends Controller
@@ -50,6 +51,7 @@ class HomeController extends Controller
         $data->aboutus = $request->input('aboutus');
         $data->contact = $request->input('contact');
         $data->references = $request->input('references');
+        $data->footerinfo = $request->input('footerinfo');
         if ($request->file('icon')) {
             $data->icon = $request->file('icon')->store('images');
         }

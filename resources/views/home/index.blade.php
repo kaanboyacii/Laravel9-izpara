@@ -6,6 +6,7 @@
 <div class="container">
     <iframe src="https://api.genelpara.com/iframe/?symbol=para-birimleri&pb=USD,EUR,GBP,XU100,GA,C,BTC&stil=stil-2&renk=beyaz" title="Döviz ve Altın Fiyatları" frameborder="0" width="1110" height="65" style="width:1110px; height:65px;"></iframe>
     <!-- <iframe src="https://api.genelpara.com/iframe/?symbol=borsa&borsa=AKBNK,ASELS,EREGL,GARAN,KRDMD,AKBNK,ASELS,EREGL,GARAN,KRDMD,AKBNK,ASELS,EREGL,GARAN,KRDMD,AKBNK,ASELS,EREGL,GARAN,KRDMD,AKBNK,ASELS,EREGL,GARAN,KRDMD,AKBNK,ASELS,EREGL,GARAN,KRDMD,AKBNK,ASELS,EREGL,GARAN,KRDMD,&stil=stil-6&renk=beyaz" title="Hisse Senetleri" frameborder="0" width="1110" height="405" style="width:1110px; height:405px;"></iframe> -->
+
     <!-- TradingView Widget BEGIN -->
     <div class="tradingview-widget-container">
         <div class="tradingview-widget-container__widget"></div>
@@ -255,7 +256,7 @@
 <section class="cryptos-blog-area section-padding-25">
     <div class="container">
         <h3>Borsa Verileri</h3>
-        <iframe src="https://api.genelpara.com/iframe/?symbol=borsa&borsa=AEFES,AFYON,AKBNK,AKENR,AKSA,AKSEN,ALARK ,ALGYO,ANELE,ARCLK,ASELS,AYGAZ,BAGFS,BANVT,BERA,BIMAS,BIZIM,BJKAS,BRISA,BRSAN,CCOLA,CEMTS,CRFSA,DEVA,DOAS,DOHOL,ECILC,EGEEN,EKGYO,ENKAI,ERBOS,EREGL,FENER ,FROTO,GARAN,GLYHO,GOLTS,GOODY,GOZDE ,GSDHO,GSRAY,GUBRF,HALKB,HLGYO,HURGZ,ICBCT,IEYHO,IHLAS,IHLGM,IPEKE,ISCTR,ISGYO,KARSN,KARTN,KCHOL,KLGYO,KORDS,KOZAA,KOZAL,KRDMD,MAVI,METRO,MGROS,NETAS,NTHOL,ODAS,OTKAR,PETKM,PGSUS,PRKME,SAHOL,SASA,SISE,SKBNK,SNGYO,TATGD,TAVHL,TCELL,THYAO,TKFEN,TKNSA,TLMAN,TMSN,TOASO,TRCAS,TSKB,TTKOM,TTRAK,TUPRS,ULKER,VAKBN ,VESTL,VKGYO,YATAS,YKBNK,ZOREN&stil=stil-7&renk=beyaz" title="Hisse Senetleri" frameborder="0" width="1110" height="405" style="width:1110px; height:405px;"></iframe>
+        <iframe src="https://api.genelpara.com/iframe/?symbol=borsa&borsa=AEFES,AFYON,AKBNK,AKENR,AKSA,AKSEN,ALARK,ALGYO,ANELE,ARCLK,ASELS,AYGAZ,BAGFS,BANVT,BERA,BIMAS,BIZIM,BJKAS,BRISA,BRSAN,CCOLA,CEMTS,CRFSA,DEVA,DOAS,DOHOL,ECILC,EGEEN,EKGYO,ENKAI,ERBOS,EREGL,FENER ,FROTO,GARAN,GLYHO,GOLTS,GOODY,GOZDE ,GSDHO,GSRAY,GUBRF,HALKB,HLGYO,HURGZ,ICBCT,IEYHO,IHLAS,IHLGM,IPEKE,ISCTR,ISGYO,KARSN,KARTN,KCHOL,KLGYO,KORDS,KOZAA,KOZAL,KRDMD,MAVI,METRO,MGROS,NETAS,NTHOL,ODAS,OTKAR,PETKM,PGSUS,PRKME,SAHOL,SASA,SISE,SKBNK,SNGYO,TATGD,TAVHL,TCELL,THYAO,TKFEN,TKNSA,TLMAN,TMSN,TOASO,TRCAS,TSKB,TTKOM,TTRAK,TUPRS,ULKER,VAKBN ,VESTL,VKGYO,YATAS,YKBNK,ZOREN&stil=stil-7&renk=beyaz" title="Hisse Senetleri" frameborder="0" width="1110" height="405" style="width:1110px; height:405px;"></iframe>
     </div>
 </section>
 <!-- ##### Course Area End ##### -->
@@ -315,187 +316,187 @@
 </section>
 <!-- ##### Currency Area End ##### -->
 <section class="cryptos-blog-area section-padding-100">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-7">
-                    <div class="blog-area">
-                        <!-- Single Blog Area -->
-                        <div class="single-blog-area d-flex align-items-start">
-                            <!-- Thumbnail -->
-                            <div class="blog-thumbnail">
-                                <img src="{{asset('assets')}}/img/blog-img/1.jpg" alt="">
-                            </div>
-                            <!-- Content -->
-                            <div class="blog-content">
-                                <a href="#" class="post-title">This Platform Aims to Disrupt the Market</a>
-                                <div class="meta-data">
-                                    <a href="#">Crypto News</a> |
-                                    <a href="#">March 18, 2018</a>
-                                </div>
-                                <p>Morbi vel arcu gravida, iaculis lacus vel, posuere ipsum. Sed faucibus mauris vitae urna consectetur, sit amet maximus nisl sagittis.</p>
-                            </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-7">
+                <div class="blog-area">
+                    <!-- Single Blog Area -->
+                    <div class="single-blog-area d-flex align-items-start">
+                        <!-- Thumbnail -->
+                        <div class="blog-thumbnail">
+                            <img src="{{asset('assets')}}/img/blog-img/1.jpg" alt="">
                         </div>
-                        <!-- Single Blog Area -->
-                        <div class="single-blog-area d-flex align-items-start">
-                            <!-- Thumbnail -->
-                            <div class="blog-thumbnail">
-                                <img src="{{asset('assets')}}/img/blog-img/2.jpg" alt="">
+                        <!-- Content -->
+                        <div class="blog-content">
+                            <a href="#" class="post-title">This Platform Aims to Disrupt the Market</a>
+                            <div class="meta-data">
+                                <a href="#">Crypto News</a> |
+                                <a href="#">March 18, 2018</a>
                             </div>
-                            <!-- Content -->
-                            <div class="blog-content">
-                                <a href="#" class="post-title">New Hedge Funds invests in Crypto</a>
-                                <div class="meta-data">
-                                    <a href="#">Crypto News</a> |
-                                    <a href="#">March 18, 2018</a>
-                                </div>
-                                <p>Iaculis lacus vel, posuere ipsum. Sed faucibus mauris vitae urna consectetur, sit amet maximus nisl sagittis. Ut in iaculis enim.</p>
-                            </div>
-                        </div>
-                        <!-- Single Blog Area -->
-                        <div class="single-blog-area d-flex align-items-start">
-                            <!-- Thumbnail -->
-                            <div class="blog-thumbnail">
-                                <img src="{{asset('assets')}}/img/blog-img/3.jpg" alt="">
-                            </div>
-                            <!-- Content -->
-                            <div class="blog-content">
-                                <a href="#" class="post-title">This Platform Aims to Disrupt the Market</a>
-                                <div class="meta-data">
-                                    <a href="#">Crypto News</a> |
-                                    <a href="#">March 18, 2018</a>
-                                </div>
-                                <p>Morbi vel arcu gravida, iaculis lacus vel, posuere ipsum. Sed faucibus mauris vitae urna consectetur, sit amet maximus nisl sagittis.</p>
-                            </div>
+                            <p>Morbi vel arcu gravida, iaculis lacus vel, posuere ipsum. Sed faucibus mauris vitae urna consectetur, sit amet maximus nisl sagittis.</p>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-12 col-lg-5">
-                    <div class="cryptos-prices-table">
-
-                        <!-- Single Price Table -->
-                        <div class="single-price-table d-flex align-items-center justify-content-between">
-                            <div class="p-content d-flex align-items-center">
-                                <span>01</span>
-                                <img src="{{asset('assets')}}/img/bg-img/bitcoin.png" alt="">
-                                <p>Bitcoin <span>BTC</span></p>
-                            </div>
-                            <div class="price increase">
-                                <p>$12 456.78</p>
-                            </div>
+                    <!-- Single Blog Area -->
+                    <div class="single-blog-area d-flex align-items-start">
+                        <!-- Thumbnail -->
+                        <div class="blog-thumbnail">
+                            <img src="{{asset('assets')}}/img/blog-img/2.jpg" alt="">
                         </div>
-
-                        <!-- Single Price Table -->
-                        <div class="single-price-table d-flex align-items-center justify-content-between">
-                            <div class="p-content d-flex align-items-center">
-                                <span>02</span>
-                                <img src="{{asset('assets')}}/img/bg-img/ethereum.png" alt="">
-                                <p>Ethereum <span>ETH</span></p>
+                        <!-- Content -->
+                        <div class="blog-content">
+                            <a href="#" class="post-title">New Hedge Funds invests in Crypto</a>
+                            <div class="meta-data">
+                                <a href="#">Crypto News</a> |
+                                <a href="#">March 18, 2018</a>
                             </div>
-                            <div class="price increase">
-                                <p>$1051.98</p>
-                            </div>
+                            <p>Iaculis lacus vel, posuere ipsum. Sed faucibus mauris vitae urna consectetur, sit amet maximus nisl sagittis. Ut in iaculis enim.</p>
                         </div>
-
-                        <!-- Single Price Table -->
-                        <div class="single-price-table d-flex align-items-center justify-content-between">
-                            <div class="p-content d-flex align-items-center">
-                                <span>03</span>
-                                <img src="{{asset('assets')}}/img/bg-img/bitcoin-cash.png" alt="">
-                                <p>Bitcoin Cash <span>BCH</span></p>
-                            </div>
-                            <div class="price decrease">
-                                <p>$2256.78</p>
-                            </div>
+                    </div>
+                    <!-- Single Blog Area -->
+                    <div class="single-blog-area d-flex align-items-start">
+                        <!-- Thumbnail -->
+                        <div class="blog-thumbnail">
+                            <img src="{{asset('assets')}}/img/blog-img/3.jpg" alt="">
                         </div>
-
-                        <!-- Single Price Table -->
-                        <div class="single-price-table d-flex align-items-center justify-content-between">
-                            <div class="p-content d-flex align-items-center">
-                                <span>04</span>
-                                <img src="{{asset('assets')}}/img/bg-img/ripple.png" alt="">
-                                <p>Ripple <span>XRP</span></p>
+                        <!-- Content -->
+                        <div class="blog-content">
+                            <a href="#" class="post-title">This Platform Aims to Disrupt the Market</a>
+                            <div class="meta-data">
+                                <a href="#">Crypto News</a> |
+                                <a href="#">March 18, 2018</a>
                             </div>
-                            <div class="price increase">
-                                <p>$2.03</p>
-                            </div>
+                            <p>Morbi vel arcu gravida, iaculis lacus vel, posuere ipsum. Sed faucibus mauris vitae urna consectetur, sit amet maximus nisl sagittis.</p>
                         </div>
-
-                        <!-- Single Price Table -->
-                        <div class="single-price-table d-flex align-items-center justify-content-between">
-                            <div class="p-content d-flex align-items-center">
-                                <span>05</span>
-                                <img src="{{asset('assets')}}/img/bg-img/litecoin.png" alt="">
-                                <p>Litecoin <span>LTC</span></p>
-                            </div>
-                            <div class="price increase">
-                                <p>$321.98</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Price Table -->
-                        <div class="single-price-table d-flex align-items-center justify-content-between">
-                            <div class="p-content d-flex align-items-center">
-                                <span>06</span>
-                                <img src="{{asset('assets')}}/img/bg-img/cardano.png" alt="">
-                                <p>Cardano <span>ADA</span></p>
-                            </div>
-                            <div class="price increase">
-                                <p>$0.75</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Price Table -->
-                        <div class="single-price-table d-flex align-items-center justify-content-between">
-                            <div class="p-content d-flex align-items-center">
-                                <span>07</span>
-                                <img src="{{asset('assets')}}/img/bg-img/nem.png" alt="">
-                                <p>NEM <span>XEM</span></p>
-                            </div>
-                            <div class="price increase">
-                                <p>$0.89</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Price Table -->
-                        <div class="single-price-table d-flex align-items-center justify-content-between">
-                            <div class="p-content d-flex align-items-center">
-                                <span>08</span>
-                                <img src="{{asset('assets')}}/img/bg-img/neo.png" alt="">
-                                <p>NEO <span>NEO</span></p>
-                            </div>
-                            <div class="price decrease">
-                                <p>$123.90</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Price Table -->
-                        <div class="single-price-table d-flex align-items-center justify-content-between">
-                            <div class="p-content d-flex align-items-center">
-                                <span>09</span>
-                                <img src="{{asset('assets')}}/img/bg-img/stellar.png" alt="">
-                                <p>Stellar <span>XLM</span></p>
-                            </div>
-                            <div class="price increase">
-                                <p>$0.67</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Price Table -->
-                        <div class="single-price-table d-flex align-items-center justify-content-between">
-                            <div class="p-content d-flex align-items-center">
-                                <span>10</span>
-                                <img src="{{asset('assets')}}/img/bg-img/iota.png" alt="">
-                                <p>IOTA <span>IOT</span></p>
-                            </div>
-                            <div class="price increase">
-                                <p>$3.55</p>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
+
+            <div class="col-12 col-lg-5">
+                <div class="cryptos-prices-table">
+
+                    <!-- Single Price Table -->
+                    <div class="single-price-table d-flex align-items-center justify-content-between">
+                        <div class="p-content d-flex align-items-center">
+                            <span>01</span>
+                            <img src="{{asset('assets')}}/img/bg-img/bitcoin.png" alt="">
+                            <p>Bitcoin <span>BTC</span></p>
+                        </div>
+                        <div class="price increase">
+                            <p>$12 456.78</p>
+                        </div>
+                    </div>
+
+                    <!-- Single Price Table -->
+                    <div class="single-price-table d-flex align-items-center justify-content-between">
+                        <div class="p-content d-flex align-items-center">
+                            <span>02</span>
+                            <img src="{{asset('assets')}}/img/bg-img/ethereum.png" alt="">
+                            <p>Ethereum <span>ETH</span></p>
+                        </div>
+                        <div class="price increase">
+                            <p>$1051.98</p>
+                        </div>
+                    </div>
+
+                    <!-- Single Price Table -->
+                    <div class="single-price-table d-flex align-items-center justify-content-between">
+                        <div class="p-content d-flex align-items-center">
+                            <span>03</span>
+                            <img src="{{asset('assets')}}/img/bg-img/bitcoin-cash.png" alt="">
+                            <p>Bitcoin Cash <span>BCH</span></p>
+                        </div>
+                        <div class="price decrease">
+                            <p>$2256.78</p>
+                        </div>
+                    </div>
+
+                    <!-- Single Price Table -->
+                    <div class="single-price-table d-flex align-items-center justify-content-between">
+                        <div class="p-content d-flex align-items-center">
+                            <span>04</span>
+                            <img src="{{asset('assets')}}/img/bg-img/ripple.png" alt="">
+                            <p>Ripple <span>XRP</span></p>
+                        </div>
+                        <div class="price increase">
+                            <p>$2.03</p>
+                        </div>
+                    </div>
+
+                    <!-- Single Price Table -->
+                    <div class="single-price-table d-flex align-items-center justify-content-between">
+                        <div class="p-content d-flex align-items-center">
+                            <span>05</span>
+                            <img src="{{asset('assets')}}/img/bg-img/litecoin.png" alt="">
+                            <p>Litecoin <span>LTC</span></p>
+                        </div>
+                        <div class="price increase">
+                            <p>$321.98</p>
+                        </div>
+                    </div>
+
+                    <!-- Single Price Table -->
+                    <div class="single-price-table d-flex align-items-center justify-content-between">
+                        <div class="p-content d-flex align-items-center">
+                            <span>06</span>
+                            <img src="{{asset('assets')}}/img/bg-img/cardano.png" alt="">
+                            <p>Cardano <span>ADA</span></p>
+                        </div>
+                        <div class="price increase">
+                            <p>$0.75</p>
+                        </div>
+                    </div>
+
+                    <!-- Single Price Table -->
+                    <div class="single-price-table d-flex align-items-center justify-content-between">
+                        <div class="p-content d-flex align-items-center">
+                            <span>07</span>
+                            <img src="{{asset('assets')}}/img/bg-img/nem.png" alt="">
+                            <p>NEM <span>XEM</span></p>
+                        </div>
+                        <div class="price increase">
+                            <p>$0.89</p>
+                        </div>
+                    </div>
+
+                    <!-- Single Price Table -->
+                    <div class="single-price-table d-flex align-items-center justify-content-between">
+                        <div class="p-content d-flex align-items-center">
+                            <span>08</span>
+                            <img src="{{asset('assets')}}/img/bg-img/neo.png" alt="">
+                            <p>NEO <span>NEO</span></p>
+                        </div>
+                        <div class="price decrease">
+                            <p>$123.90</p>
+                        </div>
+                    </div>
+
+                    <!-- Single Price Table -->
+                    <div class="single-price-table d-flex align-items-center justify-content-between">
+                        <div class="p-content d-flex align-items-center">
+                            <span>09</span>
+                            <img src="{{asset('assets')}}/img/bg-img/stellar.png" alt="">
+                            <p>Stellar <span>XLM</span></p>
+                        </div>
+                        <div class="price increase">
+                            <p>$0.67</p>
+                        </div>
+                    </div>
+
+                    <!-- Single Price Table -->
+                    <div class="single-price-table d-flex align-items-center justify-content-between">
+                        <div class="p-content d-flex align-items-center">
+                            <span>10</span>
+                            <img src="{{asset('assets')}}/img/bg-img/iota.png" alt="">
+                            <p>IOTA <span>IOT</span></p>
+                        </div>
+                        <div class="price increase">
+                            <p>$3.55</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 @endsection('content')

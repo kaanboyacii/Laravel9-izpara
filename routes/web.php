@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\HomeController as AdminHomeController;
 use App\Http\Controllers\Admin\MessageController as AdminMessageController;
 use App\Http\Controllers\Admin\AdminUserController as AdminUserController;
+use App\Http\Controllers\Admin\BlogController as AdminBlogController;
 
 
 /*
@@ -40,9 +41,11 @@ Route::get('/admin/logout', [HomeController::class, 'logout'])->name('admin_logo
 
 
 Route::get('/hakkimizda', [HomeController::class, 'about'])->name('about');
-Route::get('/forum', [HomeController::class, 'blog'])->name('blog');
 Route::get('/iletisim', [HomeController::class, 'contact'])->name('contact');
+Route::get('/forum', [HomeController::class, 'blog'])->name('blog');
+Route::get('/forum/yenipostekle', [HomeController::class, 'createblogpost'])->name('createblogpost');
 Route::post('/storemessage', [HomeController::class, 'storemessage'])->name('storemessage');
+Route::post('/storeblogpost', [HomeController::class, 'storeblogpost'])->name('storeblogpost');
 
 Route::middleware('auth')->group(function () {
     //USER ROUTES
@@ -52,7 +55,7 @@ Route::middleware('auth')->group(function () {
         Route::get('/reviewdestroy/{id}', 'reviewdestroy')->name('reviewdestroy');
         Route::get('/orders', 'orders')->name('orders');
         Route::get('/orderdetail/{id}', 'orderdetail')->name('orderdetail');
-        Route::get('/deleteproduct/{id}','deleteproduct')->name('deleteproduct');
+        Route::get('/deleteproduct/{id}', 'deleteproduct')->name('deleteproduct');
         Route::get('/favori-ürünlerim', 'favoriteproduct')->name('favoriteproduct');
     });
     //ADMİN PANEL ROUTES
@@ -67,6 +70,13 @@ Route::middleware('auth')->group(function () {
             Route::get('/show/{id}', 'show')->name('show');
             Route::post('/update/{id}', 'update')->name('update');
             Route::get('/destroy/{id}', 'destroy')->name('destroy');
+        });
+        //BLOG ROUTES
+        Route::prefix('/gönderiler')->name('blog.')->controller(AdminBlogController::class)->group(function () {
+            Route::get('/{slug}', [AdminBlogController::class, 'index'])->name('index');
+            Route::get('/cancel/{id}', 'cancel')->name('cancel');
+            Route::post('/update/{id}', 'update')->name('update');
+            Route::get('/show/{id}', 'show')->name('show');
         });
         //ADMIN FAQ ROUTES
         Route::prefix('/faq')->name('faq.')->controller(AdminFaqController::class)->group(function () {

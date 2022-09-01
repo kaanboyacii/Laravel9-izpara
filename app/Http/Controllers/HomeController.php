@@ -73,6 +73,13 @@ class HomeController extends Controller
     {
         return view(view: 'home.createblogpost');
     }
+    public function blogpost($id)
+    {
+        $data = BlogPost::find($id);
+        return view('home.blogpost', [
+            'data' => $data
+        ]);
+    }
     public function login()
     {
         return view(view: 'admin.login');

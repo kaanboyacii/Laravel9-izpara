@@ -21,7 +21,7 @@
                                         </tr>
                                         <tr>
                                             <th style="width: 30px">İsim & Soyisim</th>
-                                            <td>{{$data->user_id}}</td>
+                                            <td>{{$data->user->name}}</td>
                                         </tr>
                                         <tr>
                                             <th style="width: 30px">Başlık</th>

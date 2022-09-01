@@ -19,7 +19,7 @@
                                         <thead class="text-uppercase bg-warning">
                                             <tr class="text-white">
                                                 <th scope="col">ID</th>
-                                                <th scope="col">Kullanıcı ID</th>
+                                                <th scope="col">Kullanıcı</th>
                                                 <th scope="col">Başlık</th>
                                                 <th scope="col">Konu</th>
                                                 <th scope="col">İçerik</th>
@@ -32,7 +32,7 @@
                                             @foreach($data as $rs)
                                             <tr>
                                                 <th scope="row">{{$rs->id}}</th>
-                                                <td><a href="{{route('admin.user.show',['id'=>$rs->user_id])}}">{{$rs->user_id}}</a></td>
+                                                <td><a href="{{route('admin.user.show',['id'=>$rs->user_id])}}">{{$rs->user->name}}</a></td>
                                                 <td>{{$rs->title}}</td>
                                                 <td>{{$rs->subject}}</td>
                                                 <td>{{$rs->content}}</td>

@@ -46,6 +46,7 @@ Route::get('/forum', [HomeController::class, 'blog'])->name('blog');
 Route::get('/forum/yenipostekle', [HomeController::class, 'createblogpost'])->name('createblogpost');
 Route::post('/storemessage', [HomeController::class, 'storemessage'])->name('storemessage');
 Route::post('/storeblogpost', [HomeController::class, 'storeblogpost'])->name('storeblogpost');
+Route::get('/blogpost/{id}', [HomeController::class, 'blogpost'])->name('blogpost');
 
 Route::middleware('auth')->group(function () {
     //USER ROUTES

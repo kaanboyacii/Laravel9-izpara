@@ -59,11 +59,11 @@
                                 </div>
                                 <!-- Content -->
                                 <div class="blog-content">
-                                    <a href="#" class="post-title">{{$rs->title}}</a>
+                                    <a href="{{route('blogpost',['id'=>$rs->id])}}" class="post-title">{{$rs->title}}</a>
                                     <div class="meta-data">
                                         <a href="#">{{$rs->subject}}</a> |
-                                        <a href="#"> {{$rs->created_at->format('m/d/Y')}}</a>
-
+                                        <a href="#"> {{$rs->created_at->format('m/d/Y')}}</a> |
+                                        <a href="#"> {{$rs->user->name}}</a>
                                     </div>
                                     <p>{{$rs->content}}</p>
                                 </div>
@@ -104,9 +104,10 @@
                         </div>
                         <!-- Content -->
                         <div class="blog-content">
-                            <a href="#" class="post-title">{{$rs->title}}</a>
+                            <a href="{{route('blogpost',['id'=>$rs->id])}}" class="post-title">{{$rs->title}}</a>
                             <div class="meta-data">
-                                <a href="#">{{$rs->created_at->format('m/d/Y')}}</a>
+                                <a href="#">{{$rs->created_at->format('m/d/Y')}}</a> <br>
+                                <a href="#"> {{$rs->user->name}}</a>
                             </div>
                         </div>
                     </div>

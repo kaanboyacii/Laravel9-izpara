@@ -43,12 +43,14 @@ Route::get('/admin/logout', [HomeController::class, 'logout'])->name('admin_logo
 Route::get('/hakkimizda', [HomeController::class, 'about'])->name('about');
 Route::get('/iletisim', [HomeController::class, 'contact'])->name('contact');
 Route::get('/forum', [HomeController::class, 'blog'])->name('blog');
-Route::get('/forum/yenipostekle', [HomeController::class, 'createblogpost'])->name('createblogpost');
 Route::post('/storemessage', [HomeController::class, 'storemessage'])->name('storemessage');
-Route::post('/storeblogpost', [HomeController::class, 'storeblogpost'])->name('storeblogpost');
 Route::get('/blogpost/{id}', [HomeController::class, 'blogpost'])->name('blogpost');
 
+
 Route::middleware('auth')->group(function () {
+    Route::post('/storeblogpost', [HomeController::class, 'storeblogpost'])->name('storeblogpost');
+    Route::get('/forum/yenipostekle', [HomeController::class, 'createblogpost'])->name('createblogpost');
+    Route::post('/storeblogpostcomment', [HomeController::class, 'storeblogpostcomment'])->name('storeblogpostcomment');
     //USER ROUTES
     Route::prefix('userpanel')->name('userpanel.')->controller(App\Http\Controllers\UserController::class)->group(function () {
         Route::get('/', 'index')->name('index');
@@ -78,6 +80,13 @@ Route::middleware('auth')->group(function () {
             Route::get('/cancel/{id}', 'cancel')->name('cancel');
             Route::post('/update/{id}', 'update')->name('update');
             Route::get('/show/{id}', 'show')->name('show');
+        });
+        //Blogpost Comments
+        Route::prefix('/gönderiyorumları')->name('blog.')->controller(AdminBlogController::class)->group(function () {
+            Route::get('/{slug}', [AdminBlogController::class, 'index2'])->name('index2');
+            Route::get('/cancel/{id}', 'cancel2')->name('cancel2');
+            Route::post('/update/{id}', 'update2')->name('update2');
+            Route::get('/show/{id}', 'show2')->name('show2');
         });
         //ADMIN FAQ ROUTES
         Route::prefix('/faq')->name('faq.')->controller(AdminFaqController::class)->group(function () {

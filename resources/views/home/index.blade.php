@@ -6,7 +6,9 @@
 <div class="container">
     <iframe src="https://api.genelpara.com/iframe/?symbol=para-birimleri&pb=USD,EUR,GBP,XU100,GA,C,BTC&stil=stil-2&renk=beyaz" title="Döviz ve Altın Fiyatları" frameborder="0" width="1110" height="65" style="width:1110px; height:65px;"></iframe>
     <!-- <iframe src="https://api.genelpara.com/iframe/?symbol=borsa&borsa=AKBNK,ASELS,EREGL,GARAN,KRDMD,AKBNK,ASELS,EREGL,GARAN,KRDMD,AKBNK,ASELS,EREGL,GARAN,KRDMD,AKBNK,ASELS,EREGL,GARAN,KRDMD,AKBNK,ASELS,EREGL,GARAN,KRDMD,AKBNK,ASELS,EREGL,GARAN,KRDMD,AKBNK,ASELS,EREGL,GARAN,KRDMD,&stil=stil-6&renk=beyaz" title="Hisse Senetleri" frameborder="0" width="1110" height="405" style="width:1110px; height:405px;"></iframe> -->
-
+        @foreach($data as $rs)
+            {{ $rs->id }}
+        @endforeach
     <!-- TradingView Widget BEGIN -->
     <div class="tradingview-widget-container">
         <div class="tradingview-widget-container__widget"></div>
@@ -295,54 +297,24 @@
         <div class="row align-items-center">
             <div class="col-12 col-lg-7">
                 <div class="blog-area">
-                    <!-- Single Blog Area -->
+                    @foreach($lastestblogpost as $rs)
                     <div class="single-blog-area d-flex align-items-start">
                         <!-- Thumbnail -->
                         <div class="blog-thumbnail">
-                            <img src="{{asset('assets')}}/img/blog-img/1.jpg" alt="">
+                            <img src="{{Storage::url($rs->image)}}" alt="">
                         </div>
                         <!-- Content -->
                         <div class="blog-content">
-                            <a href="#" class="post-title">This Platform Aims to Disrupt the Market</a>
+                            <a href="{{route('blogpost',['id'=>$rs->id])}}" class="post-title">{{$rs->title}}</a>
                             <div class="meta-data">
-                                <a href="#">Crypto News</a> |
-                                <a href="#">March 18, 2018</a>
+                                <a href="#">{{$rs->subject}}</a> |
+                                <a href="#"> {{$rs->created_at->format('m/d/Y')}}</a> |
+                                <a href="#"> {{$rs->user->name}}</a>
                             </div>
-                            <p>Morbi vel arcu gravida, iaculis lacus vel, posuere ipsum. Sed faucibus mauris vitae urna consectetur, sit amet maximus nisl sagittis.</p>
+                            <p>{{ substr($rs->content, 0,  100) }}...</p>
                         </div>
                     </div>
-                    <!-- Single Blog Area -->
-                    <div class="single-blog-area d-flex align-items-start">
-                        <!-- Thumbnail -->
-                        <div class="blog-thumbnail">
-                            <img src="{{asset('assets')}}/img/blog-img/2.jpg" alt="">
-                        </div>
-                        <!-- Content -->
-                        <div class="blog-content">
-                            <a href="#" class="post-title">New Hedge Funds invests in Crypto</a>
-                            <div class="meta-data">
-                                <a href="#">Crypto News</a> |
-                                <a href="#">March 18, 2018</a>
-                            </div>
-                            <p>Iaculis lacus vel, posuere ipsum. Sed faucibus mauris vitae urna consectetur, sit amet maximus nisl sagittis. Ut in iaculis enim.</p>
-                        </div>
-                    </div>
-                    <!-- Single Blog Area -->
-                    <div class="single-blog-area d-flex align-items-start">
-                        <!-- Thumbnail -->
-                        <div class="blog-thumbnail">
-                            <img src="{{asset('assets')}}/img/blog-img/3.jpg" alt="">
-                        </div>
-                        <!-- Content -->
-                        <div class="blog-content">
-                            <a href="#" class="post-title">This Platform Aims to Disrupt the Market</a>
-                            <div class="meta-data">
-                                <a href="#">Crypto News</a> |
-                                <a href="#">March 18, 2018</a>
-                            </div>
-                            <p>Morbi vel arcu gravida, iaculis lacus vel, posuere ipsum. Sed faucibus mauris vitae urna consectetur, sit amet maximus nisl sagittis.</p>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
 

@@ -15,14 +15,14 @@
                                     <li><a href="/admin/gönderiler/yeni">Yeni Gönderiler</a></li>
                                     <li><a href="/admin/gönderiler/onaylanmış">Onaylanmış Gönderiler</a></li>
                                     <li><a href="/admin/gönderiler/iptal">İptal Edilmiş Gönderiler</a></li>
-                                    <li><a href="/admin/gönderiyorumları">Gönderi Yorumları</a></li>
+                                    <li><a href="/admin/gönderiyorumları/yeni">Yeni Gönderi Yorumları</a></li>
+                                    <li><a href="/admin/gönderiyorumları/onaylanmış">Onaylanmış Gönderi Yorumları</a></li>
+                                    <li><a href="/admin/gönderiyorumları/iptal">İptal Edilmiş Gönderi Yorumları</a></li>
                                 </ul>
                             </li>
-                            <li><a href="{{route('admin.setting')}}"><i class="ti-settings"></i> <span>Ayarlar</span></a></li>
-                            <li><a href="{{route('admin.user.index')}}"><i class="ti-user"></i> <span>Kullanıcılar</span></a></li>
                             <li><a href="{{route('admin.message.index')}}"><i class="ti-email"></i> <span>Mesajlar</span></a></li>
-                            <li><a href="maps.html"><i class="ti-map-alt"></i> <span>maps</span></a></li>
-                            <li><a href="invoice.html"><i class="ti-receipt"></i> <span>Invoice Summary</span></a></li>
+                            <li><a href="{{route('admin.user.index')}}"><i class="ti-user"></i> <span>Kullanıcılar</span></a></li>
+                            <li><a href="{{route('admin.setting')}}"><i class="ti-settings"></i> <span>Ayarlar</span></a></li>
                         </ul>
                     </nav>
                 </div>

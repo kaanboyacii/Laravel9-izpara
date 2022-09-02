@@ -12,7 +12,7 @@
                 <div class="col-lg-12 mt-5">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="header-title">Forum Gönderileri</h4>
+                            <h4 class="header-title">Forum Gönderi Yorumları</h4>
                             <div class="single-table">
                                 <div class="table-responsive">
                                     <table class="table text-center">
@@ -20,9 +20,9 @@
                                             <tr class="text-white">
                                                 <th scope="col">ID</th>
                                                 <th scope="col">Kullanıcı</th>
+                                                <th scope="col">Forum Gönderi ID</th>
                                                 <th scope="col">Başlık</th>
-                                                <th scope="col">Konu</th>
-                                                <th scope="col">İçerik</th>
+                                                <th scope="col">Yorum</th>
                                                 <th scope="col">Durum</th>
                                                 <th scope="col">detay göster</th>
                                                 <th scope="col">kaldır</th>
@@ -33,12 +33,12 @@
                                             <tr>
                                                 <th scope="row">{{$rs->id}}</th>
                                                 <td><a href="{{route('admin.user.show',['id'=>$rs->user_id])}}">{{$rs->user->name}}</a></td>
+                                                <td><a href="{{route('admin.blog.show',['id'=>$rs->blogpost_id])}}">{{$rs->blogpost_id}}</a></td>
                                                 <td>{{$rs->title}}</td>
-                                                <td>{{$rs->subject}}</td>
-                                                <td>{{$rs->content}}</td>
+                                                <td>{{$rs->comment}}</td>
                                                 <td>{{$rs->status}}</td>
-                                                <td><a class="ti-info-alt" href="{{route('admin.blog.show',['id'=>$rs->id])}}"></a></td>
-                                                <td><a class="ti-trash" href="{{route('admin.blog.cancel',['id'=>$rs->id])}}" , onclick="return confirm('İptal Etmek İçin Emin misiniz ?')"></a></td>
+                                                <td><a class="ti-info-alt" href="{{route('admin.blog.show2',['id'=>$rs->id])}}"></a></td>
+                                                <td><a class="ti-trash" href="{{route('admin.blog.cancel2',['id'=>$rs->id])}}" , onclick="return confirm('İptal Etmek İçin Emin misiniz ?')"></a></td>
                                             </tr>
                                             @endforeach
                                         </tbody>

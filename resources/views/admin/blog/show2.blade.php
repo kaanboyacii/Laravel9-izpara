@@ -11,7 +11,7 @@
                 <div class="col-lg-12 mt-5">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="header-title">Forum Gönderi Detay</h4>
+                            <h4 class="header-title">Forum Gönderi Yorum Detay</h4>
                             <div class="single-table">
                                 <div class="table-responsive">
                                     <table class="table table-hover">
@@ -24,16 +24,16 @@
                                             <td>{{$data->user->name}}</td>
                                         </tr>
                                         <tr>
+                                            <th style="width: 30px">Forum Gönderi ID</th>
+                                            <td>{{$data->blogpost_id}}</td>
+                                        </tr>
+                                        <tr>
                                             <th style="width: 30px">Başlık</th>
                                             <td>{{$data->title}}</td>
                                         </tr>
                                         <tr>
-                                            <th style="width: 30px">Konu</th>
-                                            <td>{{$data->subject}}</td>
-                                        </tr>
-                                        <tr>
-                                            <th style="width: 30px">İçerik</th>
-                                            <td>{{$data->content}}</td>
+                                            <th style="width: 30px">Yorum</th>
+                                            <td>{{$data->comment}}</td>
                                         </tr>
                                         <tr>
                                             <th style="width: 30px">Oluşturulma Tarihi</th>
@@ -46,7 +46,7 @@
                                         <tr>
                                             <th style="width: 30px">Durum:</th>
                                             <td>
-                                                <form role="form" action="{{route('admin.blog.update',['id'=>$data->id])}}" method="POST" class="forms-sample">
+                                                <form role="form" action="{{route('admin.blog.update2',['id'=>$data->id])}}" method="POST" class="forms-sample">
                                                     @csrf
                                                     <select name="status">
                                                         <option selected>{{$data->status}}</option>

@@ -50,7 +50,7 @@
                         </div>
 
                         <div class="col-12">
-                            @foreach($lastestblogpost as $rs)
+                            @foreach($trendblogpost as $rs)
                             <!-- Single Blog Area -->
                             <div class="single-blog-area d-flex align-items-start">
                                 <!-- Thumbnail -->
@@ -69,8 +69,11 @@
                                 </div>
                             </div>
                             @endforeach
+                            {{-- Pagination --}}
+                            <div class="d-flex justify-content-center">
+                                {!! $trendblogpost->links() !!}
+                            </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -95,7 +98,7 @@
                     <div class="blog-section-heading mb-50">
                         <h3>Trend Gönderiler</h3>
                     </div>
-                    @foreach($trendblogpost as $rs)
+                    @foreach($popularblogpost as $rs)
                     <!-- Single Blog Area -->
                     <div class="single-blog-area blog-style-3 d-flex align-items-center mb-15">
                         <!-- Thumbnail -->

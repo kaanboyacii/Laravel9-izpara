@@ -12,6 +12,7 @@ use App\Models\BlogPost;
 use App\Models\BlogPostComment;
 use App\Models\Message;
 use App\Models\Setting;
+use Codenixsv\CoinGeckoApi\CoinGeckoClient;
 
 class HomeController extends Controller
 {
@@ -21,19 +22,31 @@ class HomeController extends Controller
     // }
     public function index()
     {
-        $jsonurl = Http::get("https://bigpara.hurriyet.com.tr/api/v1/hisse/list");
-        $data = json_decode($jsonurl,true);
-        dd($data);
-        // // $collection=collect($posts);
-        // $uniqueUserId=$collection->unique('id');
-        // $countUnique=$collection->countBy('userId');
-        // dump($countUnique);
-        // dd($uniqueUserId);
+        $client = new CoinGeckoClient();
+        $data = $client->simple()->getPrice('bitcoin,ethereum,dogecoin,ripple,litecoin,cardano,nem,neo,stellar,iota', 'usd');
+        $bitcoin = $data['bitcoin']['usd'];
+        $ethereum = $data['ethereum']['usd'];
+        $dogecoin = $data['dogecoin']['usd'];
+        $ripple = $data['ripple']['usd'];
+        $litecoin = $data['litecoin']['usd'];
+        $cardano = $data['cardano']['usd'];
+        $nem = $data['nem']['usd'];
+        $neo = $data['neo']['usd'];
+        $stellar = $data['stellar']['usd'];
+        $iota = $data['iota']['usd'];
         $lastestblogpost = BlogPost::where('status', '=', "onaylanmış")->latest()->limit(3)->get();
         return view('home.index', [
             'lastestblogpost' => $lastestblogpost,
-            'data' => '$data',
-            'countUnique' => '$countUnique',
+            'bitcoin' => $bitcoin,
+            'ethereum' => $ethereum,
+            'dogecoin' => $dogecoin,
+            'ripple' => $ripple,
+            'litecoin' => $litecoin,
+            'cardano' => $cardano,
+            'nem' => $nem,
+            'neo' => $neo,
+            'stellar' => $stellar,
+            'iota' => $iota,
         ]);
     }
     public function about()

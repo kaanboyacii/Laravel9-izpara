@@ -6,9 +6,7 @@
 <div class="container">
     <iframe src="https://api.genelpara.com/iframe/?symbol=para-birimleri&pb=USD,EUR,GBP,XU100,GA,C,BTC&stil=stil-2&renk=beyaz" title="Döviz ve Altın Fiyatları" frameborder="0" width="1110" height="65" style="width:1110px; height:65px;"></iframe>
     <!-- <iframe src="https://api.genelpara.com/iframe/?symbol=borsa&borsa=AKBNK,ASELS,EREGL,GARAN,KRDMD,AKBNK,ASELS,EREGL,GARAN,KRDMD,AKBNK,ASELS,EREGL,GARAN,KRDMD,AKBNK,ASELS,EREGL,GARAN,KRDMD,AKBNK,ASELS,EREGL,GARAN,KRDMD,AKBNK,ASELS,EREGL,GARAN,KRDMD,AKBNK,ASELS,EREGL,GARAN,KRDMD,&stil=stil-6&renk=beyaz" title="Hisse Senetleri" frameborder="0" width="1110" height="405" style="width:1110px; height:405px;"></iframe> -->
-        @foreach($data as $rs)
-            {{ $rs->id }}
-        @endforeach
+
     <!-- TradingView Widget BEGIN -->
     <div class="tradingview-widget-container">
         <div class="tradingview-widget-container__widget"></div>
@@ -329,7 +327,7 @@
                             <p>Bitcoin <span>BTC</span></p>
                         </div>
                         <div class="price increase">
-                            <p>$12 456.78</p>
+                            <p>${{$bitcoin}}</p>
                         </div>
                     </div>
 
@@ -341,7 +339,7 @@
                             <p>Ethereum <span>ETH</span></p>
                         </div>
                         <div class="price increase">
-                            <p>$1051.98</p>
+                            <p>${{$ethereum}}</p>
                         </div>
                     </div>
 
@@ -349,11 +347,11 @@
                     <div class="single-price-table d-flex align-items-center justify-content-between">
                         <div class="p-content d-flex align-items-center">
                             <span>03</span>
-                            <img src="{{asset('assets')}}/img/bg-img/bitcoin-cash.png" alt="">
-                            <p>Bitcoin Cash <span>BCH</span></p>
+                            <img style="height: 30px;width: 30px;" src="{{asset('assets')}}/img/bg-img/dogecoin.jpg" alt="">
+                            <p>Dogecoin <span>DOGE</span></p>
                         </div>
                         <div class="price decrease">
-                            <p>$2256.78</p>
+                            <p>${{$dogecoin}}</p>
                         </div>
                     </div>
 
@@ -365,7 +363,7 @@
                             <p>Ripple <span>XRP</span></p>
                         </div>
                         <div class="price increase">
-                            <p>$2.03</p>
+                            <p>${{$ripple}}</p>
                         </div>
                     </div>
 
@@ -377,7 +375,7 @@
                             <p>Litecoin <span>LTC</span></p>
                         </div>
                         <div class="price increase">
-                            <p>$321.98</p>
+                            <p>${{$litecoin}}</p>
                         </div>
                     </div>
 
@@ -389,7 +387,7 @@
                             <p>Cardano <span>ADA</span></p>
                         </div>
                         <div class="price increase">
-                            <p>$0.75</p>
+                            <p>${{$cardano}}</p>
                         </div>
                     </div>
 
@@ -401,7 +399,7 @@
                             <p>NEM <span>XEM</span></p>
                         </div>
                         <div class="price increase">
-                            <p>$0.89</p>
+                            <p>${{$nem}}</p>
                         </div>
                     </div>
 
@@ -413,7 +411,7 @@
                             <p>NEO <span>NEO</span></p>
                         </div>
                         <div class="price decrease">
-                            <p>$123.90</p>
+                            <p>${{$neo}}</p>
                         </div>
                     </div>
 
@@ -425,7 +423,7 @@
                             <p>Stellar <span>XLM</span></p>
                         </div>
                         <div class="price increase">
-                            <p>$0.67</p>
+                            <p>${{$stellar}}</p>
                         </div>
                     </div>
 
@@ -437,7 +435,7 @@
                             <p>IOTA <span>IOT</span></p>
                         </div>
                         <div class="price increase">
-                            <p>$3.55</p>
+                            <p>${{$iota}}</p>
                         </div>
                     </div>
 

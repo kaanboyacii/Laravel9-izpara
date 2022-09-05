@@ -34,6 +34,19 @@ class HomeController extends Controller
         $neo = $data['neo']['usd'];
         $stellar = $data['stellar']['usd'];
         $iota = $data['iota']['usd'];
+
+        $response = Http::get("https://bigpara.hurriyet.com.tr/api/v1/hisse/list");
+        $result = $response->collect('data');
+        // Artık veri üzerinde Collection yöntemleri uygulayabilirsiniz. Mesela:
+        $logo = $result->firstWhere('kod', 'LOGO');
+        $id = $logo['id'] ?? null; // 331
+        // Sadece tipi hisse olanlar:
+        $shares = $result->filter(function ($row) {
+            return $row['tip'] === 'hisse';
+        });
+        $groupedShares = $result->groupBy(function ($row) {
+            return substr($row['kod'], 0, 1);
+        });
         $lastestblogpost = BlogPost::where('status', '=', "onaylanmış")->latest()->limit(3)->get();
         return view('home.index', [
             'lastestblogpost' => $lastestblogpost,
@@ -47,6 +60,8 @@ class HomeController extends Controller
             'neo' => $neo,
             'stellar' => $stellar,
             'iota' => $iota,
+            'result' => $result,
+            'shares' => $shares,
         ]);
     }
     public function about()

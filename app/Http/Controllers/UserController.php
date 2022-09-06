@@ -25,6 +25,19 @@ class UserController extends Controller
             'setting' => $setting
         ]);
     }
+    public function balance()
+    {
+        $setting = Setting::first();
+        return view('home.user.balance', [
+            'setting' => $setting
+        ]);
+    }
+    public function storebalance(Request $request)
+    {
+        $user = Auth::user();
+        $user->balance = $user->deposit($request->input('amount'));
+        return redirect()->back()->with('success', 'Bakiyeniz Yüklendi, Teşekkür Ederiz');
+    }
 
     /**
      * Show the form for creating a new resource.

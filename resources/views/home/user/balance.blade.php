@@ -15,11 +15,11 @@
             <!-- Contact Information -->
             <div class="col-12 col-lg-4">
                 <div class="contact-form-area mb-100">
-                    <form action="{{route('storebalance')}}" method="POST">
+                    <form action="{{route('userpanel.storebalance')}}" method="POST">
                         @csrf
                         <h2>Bakiye Yükle</h2>
                         <hr>
-                        <input type="number" class="form-control" name="amount" id="amount" placeholder="Yüklenecek Miktar">
+                        <input type="number" class="form-control" name="amount" id="amount" placeholder="Yüklenecek Miktar" required>
                         <button class="btn cryptos-btn btn-2 mt-2" type="submit">Yükle</button>
                     </form>
                 </div>
@@ -32,10 +32,10 @@
                         @csrf
                         <h2>Kredi Kartı</h2>
                         <hr>
-                        <input type="text" class="form-control" name="amount" id="amount" placeholder="Kart Numarası">
-                        <input type="text" class="form-control" name="amount" id="amount" placeholder="Kart Üzerindeki Ad Soyad">
-                        <input type="text" class="form-control" name="amount" id="amount" placeholder="Son Kullanma Tarihi">
-                        <input type="text" class="form-control" name="amount" id="amount" placeholder="CVV">
+                        <input type="text" class="form-control" name="amount" id="amount" placeholder="Kart Numarası" required>
+                        <input type="text" class="form-control" name="amount" id="amount" placeholder="Kart Üzerindeki Ad Soyad" required>
+                        <input type="text" class="form-control" name="amount" id="amount" placeholder="Son Kullanma Tarihi" required>
+                        <input type="text" class="form-control" name="amount" id="amount" placeholder="CVV" required>
                         <button class="btn cryptos-btn btn-2 mt-2" type="submit">Kaydet</button>
                     </form>
                 </div>

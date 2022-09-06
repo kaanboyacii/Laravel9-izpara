@@ -64,19 +64,6 @@ class HomeController extends Controller
             'shares' => $shares,
         ]);
     }
-    public function balance()
-    {
-        $setting = Setting::first();
-        return view('home.balance', [
-            'setting' => $setting
-        ]);
-    }
-    public function storebalance(Request $request)
-    {
-        $user = Auth::user();
-        $user->balance = $user->deposit($request->input('amount'));
-        return redirect()->route('balance')->with('success', 'Bakiyeniz Yüklendi, Teşekkür Ederiz');
-    }
     public function about()
     {
         $setting = Setting::first();

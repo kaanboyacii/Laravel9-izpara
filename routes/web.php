@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\Admin\HomeController as AdminHomeController;
 use App\Http\Controllers\Admin\MessageController as AdminMessageController;
 use App\Http\Controllers\Admin\AdminUserController as AdminUserController;
@@ -51,13 +52,13 @@ Route::middleware('auth')->group(function () {
     Route::post('/storeblogpost', [HomeController::class, 'storeblogpost'])->name('storeblogpost');
     Route::get('/forum/yenipostekle', [HomeController::class, 'createblogpost'])->name('createblogpost');
     Route::post('/storeblogpostcomment', [HomeController::class, 'storeblogpostcomment'])->name('storeblogpostcomment');
-    Route::get('/bakiye-yükle', [HomeController::class, 'balance'])->name('balance');
-    Route::post('/storebalance', [HomeController::class, 'storebalance'])->name('storebalance');
     //USER ROUTES
-    Route::prefix('userpanel')->name('userpanel.')->controller(App\Http\Controllers\UserController::class)->group(function () {
+    Route::prefix('userpanel')->name('userpanel.')->controller(UserController::class)->group(function () {
         Route::get('/', 'index')->name('index');
         Route::get('/reviews', 'reviews')->name('reviews');
         Route::get('/reviewdestroy/{id}', 'reviewdestroy')->name('reviewdestroy');
+        Route::get('/bakiye-yükle', 'balance')->name('balance');
+        Route::post('/storebalance', 'storebalance')->name('storebalance');
     });
     //ADMİN PANEL ROUTES
     Route::middleware('admin')->prefix('admin')->name('admin.')->group(function () {

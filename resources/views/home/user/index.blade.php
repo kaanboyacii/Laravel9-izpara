@@ -59,7 +59,7 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <a href="{{route('balance')}}" class="btn cryptos-btn btn-2 m-2">Cüzdana Bakiye Yükle</a>
+                                    <a href="{{route('userpanel.balance')}}" class="btn cryptos-btn btn-2 m-2">Cüzdana Bakiye Yükle</a>
                                 </div>
                             </div>
                         </div>

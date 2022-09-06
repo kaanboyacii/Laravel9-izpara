@@ -24,7 +24,7 @@
                                 @endguest
                                 @auth
                                 <a href="{{route('userpanel.index')}}"><i class="fa fa-user"></i> {{Auth::user()->name}}</a>
-                                <a href="{{route('userpanel.index')}}">Cüzdan: ${{Auth::user()->balance}}</a>
+                                <a href="{{route('userpanel.balance')}}">Cüzdan: ${{Auth::user()->balance}}</a>
                                 @endauth
                                 @auth
                                 <a href="/logoutuser">Çıkış Yap</a>

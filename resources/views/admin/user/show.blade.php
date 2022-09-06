@@ -29,6 +29,10 @@
                                             <td>{{$data->email}}</td>
                                         </tr>
                                         <tr>
+                                            <th>Cüzdan Bakiyesi</th>
+                                            <td>$ {{$data->balance}}</td>
+                                        </tr>
+                                        <tr>
                                             <th>Roller</th>
                                             <td>
                                                 @foreach($data->roles as $role)

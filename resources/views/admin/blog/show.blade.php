@@ -36,6 +36,14 @@
                                             <td>{{$data->content}}</td>
                                         </tr>
                                         <tr>
+                                            <th scope="col">Fotoğraf</th>
+                                            <td>
+                                                @if ($data->image)
+                                                <img src="{{Storage::url($data->image)}}" style="height:150px ;width:150px; border-radius:2px">
+                                                @endif
+                                            </td>
+                                        </tr>
+                                        <tr>
                                             <th style="width: 30px">Oluşturulma Tarihi</th>
                                             <td>{{$data->created_at}}</td>
                                         </tr>

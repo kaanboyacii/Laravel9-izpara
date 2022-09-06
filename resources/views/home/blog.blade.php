@@ -65,7 +65,7 @@
                                         <a href="#"> {{$rs->created_at->format('m/d/Y')}}</a> |
                                         <a href="#"> {{$rs->user->name}}</a>
                                     </div>
-                                    <p>{{$rs->content}}</p>
+                                    <p>{{ substr($rs->content, 0,  200) }}...</p>
                                 </div>
                             </div>
                             @endforeach

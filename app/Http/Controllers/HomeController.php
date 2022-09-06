@@ -117,7 +117,7 @@ class HomeController extends Controller
 
     public function blog()
     {
-        $trendblogpost = BlogPost::where('status', '=', "onaylanmış")->paginate(6);
+        $trendblogpost = BlogPost::where('status', '=', "onaylanmış")->latest()->paginate(6);
         $popularblogpost = BlogPost::where('status', '=', "onaylanmış")->inRandomOrder()->limit(3)->get();
         return view('home.blog', [
             'popularblogpost' => $popularblogpost,

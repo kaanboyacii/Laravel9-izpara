@@ -51,15 +51,13 @@ Route::middleware('auth')->group(function () {
     Route::post('/storeblogpost', [HomeController::class, 'storeblogpost'])->name('storeblogpost');
     Route::get('/forum/yenipostekle', [HomeController::class, 'createblogpost'])->name('createblogpost');
     Route::post('/storeblogpostcomment', [HomeController::class, 'storeblogpostcomment'])->name('storeblogpostcomment');
+    Route::get('/bakiye-yükle', [HomeController::class, 'balance'])->name('balance');
+    Route::post('/storebalance', [HomeController::class, 'storebalance'])->name('storebalance');
     //USER ROUTES
     Route::prefix('userpanel')->name('userpanel.')->controller(App\Http\Controllers\UserController::class)->group(function () {
         Route::get('/', 'index')->name('index');
         Route::get('/reviews', 'reviews')->name('reviews');
         Route::get('/reviewdestroy/{id}', 'reviewdestroy')->name('reviewdestroy');
-        Route::get('/orders', 'orders')->name('orders');
-        Route::get('/orderdetail/{id}', 'orderdetail')->name('orderdetail');
-        Route::get('/deleteproduct/{id}', 'deleteproduct')->name('deleteproduct');
-        Route::get('/favori-ürünlerim', 'favoriteproduct')->name('favoriteproduct');
     });
     //ADMİN PANEL ROUTES
     Route::middleware('admin')->prefix('admin')->name('admin.')->group(function () {

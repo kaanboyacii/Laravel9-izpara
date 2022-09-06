@@ -59,6 +59,7 @@ Route::middleware('auth')->group(function () {
         Route::get('/reviewdestroy/{id}', 'reviewdestroy')->name('reviewdestroy');
         Route::get('/bakiye-yükle', 'balance')->name('balance');
         Route::post('/storebalance', 'storebalance')->name('storebalance');
+        Route::post('/storecard', 'storecard')->name('storecard');
     });
     //ADMİN PANEL ROUTES
     Route::middleware('admin')->prefix('admin')->name('admin.')->group(function () {

@@ -75,4 +75,8 @@ class User extends Authenticatable implements Wallet,Customer
     {
         return $this->hasMany(BlogPostComment::class);
     }
+    public function card()
+    {
+        return $this->belongsTo(Card::class);
+    }
 }

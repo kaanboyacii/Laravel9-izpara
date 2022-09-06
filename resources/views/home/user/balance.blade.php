@@ -28,14 +28,14 @@
             <!-- Contact Form Area -->
             <div class="col-12 col-lg-8">
                 <div class="contact-form-area mb-100">
-                    <form action="" method="POST">
+                    <form action="{{route('userpanel.storecard')}}" method="POST">
                         @csrf
                         <h2>Kredi Kartı</h2>
                         <hr>
-                        <input type="text" class="form-control" name="amount" id="amount" placeholder="Kart Numarası" required>
-                        <input type="text" class="form-control" name="amount" id="amount" placeholder="Kart Üzerindeki Ad Soyad" required>
-                        <input type="text" class="form-control" name="amount" id="amount" placeholder="Son Kullanma Tarihi" required>
-                        <input type="text" class="form-control" name="amount" id="amount" placeholder="CVV" required>
+                        <input type="text" class="form-control" name="amount" name="cardNo" placeholder="Kart Numarası" required>
+                        <input type="text" class="form-control" name="amount" name="cardExpiringMonth" placeholder="Kart Üzerindeki Ad Soyad" required>
+                        <input type="text" class="form-control" name="amount" name="cardExpiringYear" placeholder="Son Kullanma Tarihi" required>
+                        <input type="text" class="form-control" name="amount" name="cardCVV" placeholder="CVC" required>
                         <button class="btn cryptos-btn btn-2 mt-2" type="submit">Kaydet</button>
                     </form>
                 </div>

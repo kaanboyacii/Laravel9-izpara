@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
 use App\Models\Setting;
+use App\Models\User;
 use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
@@ -18,6 +19,8 @@ class UserController extends Controller
     public function index()
     {
         $setting = Setting::first();
+        $user = Auth::user();
+        // dd($user->balance);
         return view('home.user.index', [
             'setting' => $setting
         ]);

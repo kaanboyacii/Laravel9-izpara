@@ -53,8 +53,13 @@
                                                 <th scope="row">İsim</th>
                                                 <td>{{Auth::user()->name}}</td>
                                             </tr>
+                                            <tr>
+                                                <th scope="row">Cüzdan</th>
+                                                <td>$ {{Auth::user()->balance}}</td>
+                                            </tr>
                                         </tbody>
                                     </table>
+                                    <a href="#" class="btn cryptos-btn btn-2 m-2">Cüzdana Bakiye Yükle</a>
                                 </div>
                             </div>
                         </div>

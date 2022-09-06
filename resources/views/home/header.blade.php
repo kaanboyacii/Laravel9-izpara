@@ -28,7 +28,7 @@
                                 @auth
                                 <a href="/logoutuser">Çıkış Yap</a>
                                 @endauth
-                                <a href="#" class="active">Para kazan</a>
+                                <a href="https://www.coinbase.com/tr/earn" class="active">Para kazan</a>
                             </div>
                         </div>
                     </div>

@@ -24,6 +24,7 @@
                                 @endguest
                                 @auth
                                 <a href="{{route('userpanel.index')}}"><i class="fa fa-user"></i> {{Auth::user()->name}}</a>
+                                <a href="{{route('userpanel.index')}}">Cüzdan: ${{Auth::user()->balance}}</a>
                                 @endauth
                                 @auth
                                 <a href="/logoutuser">Çıkış Yap</a>
@@ -66,32 +67,6 @@
                                     <li><a href="/hakkimizda">Hakkımızda</a></li>
                                     <li><a href="/forum">Forum</a></li>
                                     <li><a href="/iletisim">İletişim</a></li>                                
-                                    <li><a href="#">Mega Menu</a>
-                                        <div class="megamenu">
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="#">- Home</a></li>
-                                                <li><a href="#">- About us</a></li>
-                                                <li><a href="#">- Services</a></li>
-                                                <li><a href="#">- Testimonials</a></li>
-                                                <li><a href="#">- News</a></li>
-                                                <li><a href="#">- About us</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="#">- Contact</a></li>
-                                                <li><a href="#">- Faq</a></li>
-                                                <li><a href="#">- Terms &amp; Conditions</a></li>
-                                                <li><a href="#">- Careers</a></li>
-                                                <li><a href="#">- Newsletter &amp; Exchange</a></li>
-                                                <li><a href="#">- Terms &amp; Conditions</a></li>
-                                            </ul>
-                                            <div class="single-mega cn-col-4">
-                                                <div class="megamenu-slides owl-carousel">
-                                                    <img src="{{asset('assets')}}/img/bg-img/bg-1.jpg" alt="">
-                                                    <img src="{{asset('assets')}}/img/bg-img/bg-1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
                                 </ul>
                             </div>
                             <!-- Nav End -->

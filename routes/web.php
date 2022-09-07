@@ -46,6 +46,7 @@ Route::get('/iletisim', [HomeController::class, 'contact'])->name('contact');
 Route::get('/forum', [HomeController::class, 'blog'])->name('blog');
 Route::post('/storemessage', [HomeController::class, 'storemessage'])->name('storemessage');
 Route::get('/blogpost/{id}', [HomeController::class, 'blogpost'])->name('blogpost');
+Route::get('/user/{id}', [HomeController::class, 'user'])->name('user');
 
 
 Route::middleware('auth')->group(function () {

@@ -12,6 +12,7 @@ use App\Models\BlogPost;
 use App\Models\BlogPostComment;
 use App\Models\Message;
 use App\Models\Setting;
+use App\Models\User;
 use Codenixsv\CoinGeckoApi\CoinGeckoClient;
 
 class HomeController extends Controller
@@ -135,6 +136,15 @@ class HomeController extends Controller
         return view('home.blogpost', [
             'blogpostcomment' => $blogpostcomment,
             'data' => $data,
+        ]);
+    }
+    public function user($id)
+    {
+        $data = User::find($id);
+        $blogposts = BlogPost::where('user_id', $id)->where('status', '=', "onaylanmış")->paginate(1);
+        return view('home.user', [
+            'data' => $data,
+            'blogposts' => $blogposts,
         ]);
     }
 

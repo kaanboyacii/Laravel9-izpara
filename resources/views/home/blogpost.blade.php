@@ -16,7 +16,7 @@
                 <div class="about-content mb-100">
                     <div class="section-heading">
                         <h3>{{$data->title}}</h3>
-                        <h5>{{$data->subject}} | {{$data->created_at->format('m/d/Y')}} | {{$data->user->name}}</h5>
+                        <h5>{{$data->subject}} | {{$data->created_at->format('m/d/Y')}} | <a href="{{route('user',['id'=>$data->user_id])}}">{{$data->user->name}}</a></h5>
                         <p>{{$data->content}}</p>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                 <div class="about-content mb-100">
                     <div class="section-heading">
                         <h4>{{$rs->title}}</h4>
-                        <h5>{{$rs->user->name}} | {{$rs->created_at->format('m/d/Y')}}</h5>
+                        <h5>{{$data->created_at->format('m/d/Y')}} | <a href="{{route('user',['id'=>$rs->user_id])}}">{{$rs->user->name}}</a></h5>
                         <p>{{$rs->comment}} </p>
                     </div>
                 </div>

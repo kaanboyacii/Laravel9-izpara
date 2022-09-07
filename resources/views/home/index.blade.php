@@ -309,7 +309,7 @@
                             <div class="meta-data">
                                 <a href="#">{{$rs->subject}}</a> |
                                 <a href="#"> {{$rs->created_at->format('m/d/Y')}}</a> |
-                                <a href="#"> {{$rs->user->name}}</a>
+                                <a href="{{route('user',['id'=>$rs->user_id])}}"> {{$rs->user->name}}</a>
                             </div>
                             <p>{{ substr($rs->content, 0,  100) }}...</p>
                         </div>

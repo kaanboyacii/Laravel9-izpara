@@ -18,8 +18,20 @@
             </div>
         </div>
     </div>
+    <!-- Breadcumb Thumb Area -->
+    <div class="breadcumb-thumb-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcumb-thumb">
+                        <img src="{{asset('assets')}}/img/bg-img/user.png" style="height: 200px;width: 200px;" alt="Kullanıcı Fotograf">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<!-- ##### Breadcumb Area End ##### -->
+<!-- ####
 
 <!-- ##### Blog Area Start ##### -->
 <div class="blog-area section-padding-100">
@@ -35,6 +47,7 @@
                             <div class="cryptos-tab-content">
                                 <!-- Tab Text -->
                                 <div class="cryptos-tab-text">
+                                    <a href="{{route('dashboard')}}" class="btn cryptos-btn btn-2 m-2">Dashboard</a>
                                     @include('profile.show')
                                 </div>
                             </div>
@@ -76,7 +89,8 @@
             </div>
         </div>
     </div>
-    <br>
-    <br>
+</div>
+<br>
+<br>
 
-    @endsection('content')
+@endsection('content')

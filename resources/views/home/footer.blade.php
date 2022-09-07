@@ -30,7 +30,7 @@
                             @foreach($lastestblogpost as $rs)
                             <!-- Single Blog Post -->
                             <div class="single--blog-post">
-                                <a href="#">
+                                <a href="{{route('blogpost',['id'=>$rs->id])}}">
                                     <p>{{$rs->title}}</p>
                                 </a>
                                 <span>{{$rs->created_at->format('m/d/Y')}}</span>

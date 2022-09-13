@@ -11,6 +11,7 @@ use Illuminate\Support\Collection;
 use App\Models\BlogPost;
 use App\Models\Setting;
 use Codenixsv\CoinGeckoApi\CoinGeckoClient;
+use LaravelDaily\LaravelCharts\Classes\LaravelChart;
 
 class HomeController extends Controller
 {
@@ -21,10 +22,20 @@ class HomeController extends Controller
         $data2 = $result = $client->coins()->getMarkets('usd');
         $collection = (new Collection($data2))->paginate(10);
         // dd($data2);
+        $chart_options = [
+            'chart_title' => 'Aylara Göre Kayıt Olan Kullanıcılar',
+            'report_type' => 'group_by_date',
+            'model' => 'App\Models\User',
+            'group_by_field' => 'created_at',
+            'group_by_period' => 'month',
+            'chart_type' => 'bar',
+        ];
+        $chart1 = new LaravelChart($chart_options);
         $newblogpost = BlogPost::where('status', '=', "yeni")->latest()->limit(3)->get();
         return view('admin.index', [
             'collection' => $collection,
             'newblogpost' => $newblogpost,
+            'chart1' => $chart1,
 
         ]);
     }

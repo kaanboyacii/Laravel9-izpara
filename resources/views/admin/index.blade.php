@@ -76,23 +76,13 @@
         <div class="col-xl-6 mt-md-30 mt-xs-30 mt-sm-30">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="header-title">Exchange</h4>
+                    <h4 class="header-title">Kullanıcı Sayısı</h4>
                     <div class="exhcange-rate mt-5">
-                        <form action="#">
-                            <div class="input-form">
-                                <input type="text" value="0.76834">
-                                <span>BTC</span>
-                            </div>
-                            <div class="exchange-devider">To</div>
-                            <div class="input-form">
-                                <input type="text" value="5689.846">
-                                <span>USD</span>
-                            </div>
-                            <div class="exchange-btn">
-                                <button type="submit">Exchange Now</button>
-                            </div>
-                        </form>
+                        <h2>{{ $chart1->options['chart_title'] }}</h2>
+                        {!! $chart1->renderHtml() !!}
                     </div>
+                    {!! $chart1->renderChartJsLibrary() !!}
+                    {!! $chart1->renderJs() !!}
                 </div>
             </div>
         </div>

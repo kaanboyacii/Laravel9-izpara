@@ -23,6 +23,7 @@
     <!-- modernizr css -->
     <script src="{{asset('assets')}}/admin/js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 </head>
 
 <body>

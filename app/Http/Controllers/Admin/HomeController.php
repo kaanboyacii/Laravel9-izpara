@@ -7,14 +7,47 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Collection;
 use App\Models\BlogPost;
 use App\Models\Setting;
+use Codenixsv\CoinGeckoApi\CoinGeckoClient;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        return view(view: 'admin.index');
+        $client = new CoinGeckoClient();
+        $data = $client->simple()->getPrice('bitcoin,ethereum,dogecoin,ripple,litecoin,cardano,nem,neo,stellar,iota', 'usd');
+        $data2 = $result = $client->coins()->getMarkets('usd');
+        $collection = (new Collection($data2))->paginate(10);
+        // dd($data2);
+        
+        // dd($bitcoin);
+        $bitcoin = $data['bitcoin']['usd'];
+        $ethereum = $data['ethereum']['usd'];
+        $dogecoin = $data['dogecoin']['usd'];
+        $ripple = $data['ripple']['usd'];
+        $litecoin = $data['litecoin']['usd'];
+        $cardano = $data['cardano']['usd'];
+        $nem = $data['nem']['usd'];
+        $neo = $data['neo']['usd'];
+        $stellar = $data['stellar']['usd'];
+        $iota = $data['iota']['usd'];
+        return view('admin.index', [
+            'bitcoin' => $bitcoin,
+            'ethereum' => $ethereum,
+            'dogecoin' => $dogecoin,
+            'ripple' => $ripple,
+            'litecoin' => $litecoin,
+            'cardano' => $cardano,
+            'nem' => $nem,
+            'neo' => $neo,
+            'stellar' => $stellar,
+            'iota' => $iota,
+            'data2' => $data2,
+            'collection' => $collection,
+
+        ]);
     }
     public function setting()
     {

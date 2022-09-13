@@ -53,28 +53,20 @@
         <div class="col-xl-6">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="header-title">Latest News</h4>
+                    <h4 class="header-title">Yeni Gönderiler</h4>
                     <div class="letest-news mt-5">
-                        <div class="single-post mb-xs-40 mb-sm-40">
-                            <div class="lts-thumb">
-                                <img src="assets/images/blog/post-thumb1.jpg" alt="post thumb">
-                            </div>
-                            <div class="lts-content">
-                                <span>Admin Post</span>
-                                <h2><a href="blog.html">Sed ut perspiciatis unde omnis iste.</a></h2>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some...</p>
-                            </div>
-                        </div>
+                        @foreach($newblogpost as $rs)
                         <div class="single-post">
                             <div class="lts-thumb">
-                                <img src="assets/images/blog/post-thumb2.jpg" alt="post thumb">
+                                <img src="{{Storage::url($rs->image)}}" alt="post thumb">
                             </div>
                             <div class="lts-content">
-                                <span>Admin Post</span>
-                                <h2><a href="blog.html">Sed ut perspiciatis unde omnis iste.</a></h2>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some...</p>
+                                <span>{{$rs->status}}</span>
+                                <h2><a href="{{route('admin.blog.show',['id'=>$rs->id])}}">{{$rs->title}}</a></h2>
+                                <p>{{ substr($rs->content, 0,  200) }}...</p>
                             </div>
                         </div>
+                        @endforeach
                     </div>
                 </div>
             </div>

@@ -21,31 +21,10 @@ class HomeController extends Controller
         $data2 = $result = $client->coins()->getMarkets('usd');
         $collection = (new Collection($data2))->paginate(10);
         // dd($data2);
-        
-        // dd($bitcoin);
-        $bitcoin = $data['bitcoin']['usd'];
-        $ethereum = $data['ethereum']['usd'];
-        $dogecoin = $data['dogecoin']['usd'];
-        $ripple = $data['ripple']['usd'];
-        $litecoin = $data['litecoin']['usd'];
-        $cardano = $data['cardano']['usd'];
-        $nem = $data['nem']['usd'];
-        $neo = $data['neo']['usd'];
-        $stellar = $data['stellar']['usd'];
-        $iota = $data['iota']['usd'];
+        $newblogpost = BlogPost::where('status', '=', "yeni")->latest()->limit(3)->get();
         return view('admin.index', [
-            'bitcoin' => $bitcoin,
-            'ethereum' => $ethereum,
-            'dogecoin' => $dogecoin,
-            'ripple' => $ripple,
-            'litecoin' => $litecoin,
-            'cardano' => $cardano,
-            'nem' => $nem,
-            'neo' => $neo,
-            'stellar' => $stellar,
-            'iota' => $iota,
-            'data2' => $data2,
             'collection' => $collection,
+            'newblogpost' => $newblogpost,
 
         ]);
     }

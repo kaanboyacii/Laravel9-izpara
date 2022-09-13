@@ -80,7 +80,62 @@
                             <div class="cryptos-tab-content">
                                 <!-- Tab Text -->
                                 <div class="cryptos-tab-text">
-                                    <p>Integer nec bibendum lacus. Praesent malesuada congue, Suspendisse dictum enim sit amet libero malesu ada feugiat. Praesent malesuada congue magna at finibus. In hac habitasse platea dictumst. Curabitur rhoncus auctor eleifend. Praesent malesuada congue.</p>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="cryptos-blog-posts">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="blog-section-heading">
+                                                        <h3>Forum Gönderilerim</h3>
+                                                    </div>
+                                                </div>
+                                                @foreach ($blogposts as $rs)
+                                                <div class="col-12" style="padding-bottom: 40px;">
+                                                    <!-- Single Blog Area -->
+                                                    <div class="single-blog-area d-flex align-items-start">
+                                                        <!-- Thumbnail -->
+                                                        <div class="blog-thumbnail">
+                                                            <img src="{{Storage::url($rs->image)}}" alt="">
+                                                        </div>
+                                                        <!-- Content -->
+                                                        <div class="blog-content">
+                                                            <a href="{{route('blogpost',['id'=>$rs->id])}}" class="post-title">{{$rs->title}}</a>
+                                                            <div class="meta-data">
+                                                                <a href="#">{{$rs->subject}}</a> |
+                                                                <a href="#">{{$rs->content}}</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                @endforeach
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <div class="cryptos-blog-sidebar-area">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="blog-section-heading">
+                                                        <h3>Forum Yorumlarım</h3>
+                                                    </div>
+                                                </div>
+                                                @foreach ($blogpostcomments as $rs)
+                                                <div class="col-12" style="padding-bottom: 40px;">
+                                                    <!-- Single Blog Area -->
+                                                    <div class="single-blog-area d-flex align-items-start">
+                                                        <!-- Content -->
+                                                        <div class="blog-content">
+                                                            <a href="{{route('blogpost',['id'=>$rs->blogpost_id])}}" class="post-title">{{$rs->title}}</a>
+                                                            <div class="meta-data">
+                                                                <a href="#">{{$rs->comment}}</a> | <br>
+                                                                <a href="#">{{$rs->status}}</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                @endforeach
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
+use App\Models\BlogPost;
+use App\Models\BlogPostComment;
 use App\Models\Setting;
 use App\Models\User;
 use Illuminate\Support\Facades\DB;
@@ -19,10 +21,13 @@ class UserController extends Controller
     public function index()
     {
         $setting = Setting::first();
-        $user = Auth::user();
+        $blogposts = BlogPost::where('user_id', '=', Auth::id())->get();
+        $blogpostcomments = BlogPostComment::where('user_id', '=', Auth::id())->get();
         // dd($user->balance);
         return view('home.user.index', [
-            'setting' => $setting
+            'setting' => $setting,
+            'blogposts' => $blogposts,
+            'blogpostcomments' => $blogpostcomments,
         ]);
     }
     public function balance()

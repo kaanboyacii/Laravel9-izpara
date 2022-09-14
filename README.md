@@ -1,3 +1,8 @@
+![izpara](https://user-images.githubusercontent.com/98668706/190103147-4f2a98a1-28b5-4797-a909-86b5d6e4e644.png)
+
+![izparaadmin](https://user-images.githubusercontent.com/98668706/190103239-ca3d7423-a4e4-4ce0-9bb6-928d4ff9574d.png)
+
+
 Home Page Preview Video:
 
 https://www.youtube.com/watch?v=psSeXXostDY

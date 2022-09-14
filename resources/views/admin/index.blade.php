@@ -13,8 +13,8 @@
                         <h4 class="header-title mb-0">Coin Piyasa Değerleri & Takibi</h4>
                     </div>
                     <div class="market-status-table mt-4">
-                        <div class="table-responsive">
-                            <table class="dbkit-table">
+                        <div class="table-responsive table-wrapper-scroll-y my-custom-scrollbar">
+                            <table class="dbkit-table mb-0">
                                 <tr class="heading-td">
                                     <td class="mv-icon">Logo</td>
                                     <td class="coin-name">Sembol</td>
@@ -37,10 +37,6 @@
                                 </tr>
                                 @endforeach
                             </table>
-                            {{-- Pagination --}}
-                            <div class="d-flex justify-content-center">
-                                {!! $collection->links() !!}
-                            </div>
                         </div>
                     </div>
                 </div>

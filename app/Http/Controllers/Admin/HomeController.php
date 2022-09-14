@@ -19,8 +19,7 @@ class HomeController extends Controller
     {
         $client = new CoinGeckoClient();
         $data = $client->simple()->getPrice('bitcoin,ethereum,dogecoin,ripple,litecoin,cardano,nem,neo,stellar,iota', 'usd');
-        $data2 = $result = $client->coins()->getMarkets('usd');
-        $collection = (new Collection($data2))->paginate(10);
+        $collection = $client->coins()->getMarkets('usd');
         // dd($data2);
         $chart_options = [
             'chart_title' => 'Aylara Göre Kayıt Olan Kullanıcılar',

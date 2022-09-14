@@ -48,7 +48,6 @@
                                 <!-- Tab Text -->
                                 <div class="cryptos-tab-text">
                                     <a href="{{route('dashboard')}}" class="btn cryptos-btn btn-2 m-2">Dashboard</a>
-                                    @include('profile.show')
                                 </div>
                             </div>
                         </div>
